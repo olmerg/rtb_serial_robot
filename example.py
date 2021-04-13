@@ -16,7 +16,7 @@ from math import pi
 
 class Swift_serial(rtb.backends.Swift):  # pragma nocover
     """
-    Serial backend using Swift and a arduino to command the robot
+    Graphical backend using Serial_Swift
 
     Swift is a web app built on three.js. It supports many 3D graphical
     primitives including meshes, boxes, ellipsoids and lines. It can render
@@ -34,26 +34,19 @@ class Swift_serial(rtb.backends.Swift):  # pragma nocover
 
         import roboticstoolbox as rtb
 
-        env = Swift_serial('COM4',115200)
-        #posicion inicial (aqui cambiar por el robot realizado)
-        robot = rtb.models.UR3()
-        # the robot should start in home 
-        env.add(robot)
-        # animar generando una trayectoria
-        qt = rtb.tools.trajectory.jtraj(np.array([0, 0, 0, 0,0, 0]), np.array([pi/2,0, pi/2, pi/2,pi/2, 0]), 20)
-        for q in qt.y:
-            print(q)
-            robot.q=q
-            env.step(0.1)
-        # return to home
-        env.reset()
-        #draw the trayectory
-        qt.plot(block=True)
+        robot = rtb.models.DH.Panda()  # create a robot
+
+        pyplot = rtb.backends.Swift()   # create a Swift backend
+        pyplot.add(robot)              # add the robot to the backend
+        robot.q = robot.qz             # set the robot configuration
+        pyplot.step()                  # update the backend and graphical view
+
+
 
     """
     def __init__(self, port,baudrate, display=True):
         """
-        To start the robot is sent to home with command h
+        
 
         Parameters
         ----------
@@ -62,7 +55,7 @@ class Swift_serial(rtb.backends.Swift):  # pragma nocover
         baudrate : TYPE
             DESCRIPTION.  baudrate 
         display : TYPE, optional
-            DESCRIPTION. Show the robot in swift ( The default is True.)
+            DESCRIPTION. The default is True.
 
         Returns
         -------
@@ -71,7 +64,7 @@ class Swift_serial(rtb.backends.Swift):  # pragma nocover
         """
         super(Swift_serial, self).__init__(realtime=False)
         print('init serial ',port,' speed ',baudrate)
-        self.serial=serial.Serial()
+        self.serial=serial.Serial(timeout=1)
         self.serial.baudrate = baudrate
         self.serial.port = port
         self.serial.open()
@@ -140,8 +133,9 @@ class Swift_serial(rtb.backends.Swift):  # pragma nocover
                 if(np.sum(np.abs(move))>0):
                         self.move_serial(move)
                 line=self.serial.readline().decode("utf-8")
-                if line[0]=='*' and line[-3]=='*':
-                    print(line[1:-3].split(','))
+                if len(line)>0:
+                    if line[0]=='*' and line[-3]=='*':
+                        print(line[1:-3].split(','))
                 #TODO: what to do if the motor did not come to the expected value?
                 self.q_1=robot.q
                 
@@ -180,24 +174,39 @@ class Swift_serial(rtb.backends.Swift):  # pragma nocover
                     #self.serial.write(b'S')
                     comandos+=chr(command+i+32)
         self.serial.write(comandos.encode())
-
+        # if True:
+        #     command=65+i #A is the motor zero+ and a is motor zero-
+        #     if move>0:
+        #         for j in range(0,move):
+        #             self.serial.write(chr(command).encode())
+        #             #print(chr(command+i))
+        #             time.sleep(0.001)
+        #     elif move<0:
+        #         for j in range(move,0):
+        #             self.serial.write(chr(command+32).encode())
+        #             time.sleep(0.001)
 
 
 if __name__ == '__main__':   # pragma nocover
 
     env = Swift_serial('COM4',115200)
+    env.launch()
+    
     #posicion inicial (aqui cambiar por el robot realizado)
     robot = rtb.models.UR3()
     # the robot should start in home 
+    
     env.add(robot)
+    
+    
     # animar generando una trayectoria
     qt = rtb.tools.trajectory.jtraj(np.array([0, 0, 0, 0,0, 0]), np.array([pi/2,0, pi/2, pi/2,pi/2, 0]), 20)
+    
     for q in qt.y:
          print(q)
          robot.q=q
          env.step(0.1)
     # return to home
     env.reset()
-    #draw the trayectory
     qt.plot(block=True)
     

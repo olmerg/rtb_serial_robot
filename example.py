@@ -5,7 +5,7 @@ Created on Wed Feb 17 06:12:26 2021
 please install pySerial
 pip install pyserial
 
-@author: olmer
+@author: olmer Garcia
 """
 import numpy as np
 import roboticstoolbox as rtb
@@ -23,8 +23,6 @@ if __name__ == '__main__':   # pragma nocover
     # the robot should start in home 
     
     env.add(robot)
-    
-    
     # animar generando una trayectoria
     qt = rtb.tools.trajectory.jtraj(np.array([0, 0, 0, 0,0, 0]), np.array([pi/2,0, pi/2, pi/2,pi/2, 0]), 20)
     

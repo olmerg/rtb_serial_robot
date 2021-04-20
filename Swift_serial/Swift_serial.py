@@ -16,30 +16,28 @@ from math import pi
 
 class Swift_serial(rtb.backends.Swift):  # pragma nocover
     """
-    Graphical backend using Serial_Swift
+    Graphical and Hardware backend using Serial_Swift
 
-    Swift is a web app built on three.js. It supports many 3D graphical
-    primitives including meshes, boxes, ellipsoids and lines. It can render
-    Collada objects in full color.
+    This class connect to arduino through serial port and sent with the next protocol the movement to the motors:     
+     - an alphabet value of th motor(ab,b,c,d,e or g) in lower case to decrement one degree or in upper case to increase one degree
+     - sent h to return to home the robot (applied in the moment to add the robot or to reset the enviroment)
 
-    :param display: Do not launch the graphical front-end of the simulator.
-        Will still simulate the robot. Runs faster due to not needing to
-        display anything.
-    :type display: bool
+    **Note** You require to add install pySerial to use this library `pip install pyserial`
 
     Example:
 
     .. code-block:: python
         :linenos:
-
-        import roboticstoolbox as rtb
-
-        robot = rtb.models.DH.Panda()  # create a robot
-
-        pyplot = rtb.backends.Swift()   # create a Swift backend
-        pyplot.add(robot)              # add the robot to the backend
-        robot.q = robot.qz             # set the robot configuration
-        pyplot.step()                  # update the backend and graphical view
+        from Swift_serial import Swift_serial
+        env.add(robot)  #this return to home the robot
+        # generate a trajetory
+        qt = rtb.tools.trajectory.jtraj(np.array([0, 0, 0, 0,0, 0]), np.array([pi/2,0, pi/2, pi/2,pi/2, 0]), 20)
+        for q in qt.y:
+            print(q)
+            robot.q=q
+            env.step(0.1)
+        # return to home
+        env.reset()
 
 
 
@@ -159,7 +157,9 @@ class Swift_serial(rtb.backends.Swift):  # pragma nocover
         self.last_time = time.time()
     def move_serial(self,q_move):
         '''
-        TODO: cambiar para el envio del comando de los 5 motores simultaneamente
+        the protocol is one letter for each degree of movement of robot
+        example first motor use a(-1) or A(+1)
+        
          chr(ord(a)+1)
         '''
         comandos=''

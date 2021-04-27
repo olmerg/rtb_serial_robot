@@ -24,5 +24,8 @@ Esta libreria se conecta por serial a los robots basados en servos de aeromodeli
 Realizado por el curso de Robotica Industrial 2021-I de Ingeniería en automatización de Universidad Jorge Tadeo Lozano
 
 Profesor: Olmer Garcia Bedoya (@olmerg)
-AQUI a medida que vayan haciendo aportes escribir sus nombres
+
+Grupo 1: Jonathan Sechagua Guarnizo - Diego Carreño - Jorge Lemos - Alberto Roa
+
+
 

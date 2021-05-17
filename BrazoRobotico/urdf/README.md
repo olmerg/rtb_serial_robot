@@ -6,17 +6,17 @@ Integrantes:
     - Jorge Eliecer Rodriguez
     - Luis Carlos Escobar
 
-![](https://1.bp.blogspot.com/-fUGpH5Bgu7s/YKMBT-O6GGI/AAAAAAAAAMQ/5IHCjZtcR8APPKnjhtdPkRFTJuU7XKP_gCLcBGAsYHQ/s1040/WhatsApp%2BImage%2B2021-05-17%2Bat%2B5.25.51%2BPM.jpeg)
+![]()
 
 ## Construccion del robot
 
 * Se selecciono el material adecuado para la fabricacion del robot en este caso utilizamos mdf con un espesor de 3mm.
 
-![](https://www.blogger.com/u/1/blog/post/edit/preview/7394514771347193319/2504004808712897670)
+![](https://1.bp.blogspot.com/-fUGpH5Bgu7s/YKMBT-O6GGI/AAAAAAAAAMQ/5IHCjZtcR8APPKnjhtdPkRFTJuU7XKP_gCLcBGAsYHQ/s1040/WhatsApp%2BImage%2B2021-05-17%2Bat%2B5.25.51%2BPM.jpeg)
 
 * Se parte de los planos que teniamos y se producen unos nuevos para construccion en formato DWG r14.
 
-![image-5.png](attachment:image-5.png)
+![](https://1.bp.blogspot.com/-hxoynZFSPEI/YKMBz1KVa2I/AAAAAAAAAMc/nnnwwroVix8BrVmKlR672mGGj2GsrZKVACLcBGAsYHQ/s661/WhatsApp%2BImage%2B2021-05-17%2Bat%2B5.58.32%2BPM.jpeg)
 
 * Se Selecciona los procesos adecuados para darle forma a nuestro robot en este caso utilizamos corte laser partiendo de los archivos en autocad DWG r14.
 * Se realiza el ensamble de las piezas utilizando tornilleria m3x30.
@@ -44,7 +44,7 @@ Dedos(12)
 * Se realizan pruebas de funcionamiento de todo el mecanismo.
 * Se procede a hacer las trayectorias utilizando los conceptos vistos en el curso buscando la calidad y solidez, esto se logra por el numero de pruebas realizadas: cuanto mayor sea el numero de test, mayor garantia  tendria la funcionalidad del robot.
 
-![image-3.png](attachment:image-3.png)
+![](https://1.bp.blogspot.com/-lHwEglRg_3Y/YKMCjxuVD2I/AAAAAAAAAMk/avmDb_9QYYUaU1x8eej0ckXDU2IPgI_jQCLcBGAsYHQ/s522/imageeeen.jpg)
 
 ## Pruebas segundo corte
 
@@ -66,7 +66,7 @@ y por ultimo ejecutabamos el comando  "rosrun rqt_graph rqt_graph" - para ver su
 3. prueba bluetooth: Se realizo una prueba de funcionamiento del robot fisico mediante bluetooth utilizando una aplicacion movil y arduino, en arduino realizamos un codigo el cual nos permitia controlar el movimiento
 de los servomotores desde el celular.
 
-![](https://1.bp.blogspot.com/-kGzaiTT7Jf0/YKL-iOZHdaI/AAAAAAAAAME/KurcCEtbTfQUu7JcfzXyNqgCxkw1BzoogCLcBGAsYHQ/s881/este%2Bes%2Bel%2Bque%2Btoca%2Bhacer.png)
+![]()
 
 
 ## Grados de libertad robot

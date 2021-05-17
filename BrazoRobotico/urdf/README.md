@@ -12,7 +12,7 @@ Integrantes:
 
 * Se selecciono el material adecuado para la fabricacion del robot en este caso utilizamos mdf con un espesor de 3mm.
 
-![image-4.png](attachment:image-4.png)
+![image-4.png](https://ibb.co/zmnbrpy)
 
 * Se parte de los planos que teniamos y se producen unos nuevos para construccion en formato DWG r14.
 

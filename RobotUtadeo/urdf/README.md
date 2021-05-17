@@ -65,7 +65,7 @@ abrir una consola desde la carpeta donde está el urdf y ejecutar
 
 En el siguente video se explica con más detalle el diseño de los planos y el urdf del robot [Planos&URDF](https://robotutadeo.blogspot.com/2021/05/diseno-planos-y-urdf-del-robot-utadeo.html "Planos&URDF")
 
-[========]
+
 ## Planeamiento de trayectoria
 1. Importar el robot de la clase RobotUtadeo
 

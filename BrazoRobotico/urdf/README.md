@@ -101,7 +101,7 @@ Las trayectorias del brazo robotico que realizamos las hicimos en jupyter notebo
 
 ## Aplicación brazo robótico
 
-![image-2.png](attachment:image-2.png)
+![](https://i.ytimg.com/vi/wAy9u0frJ9c/maxresdefault.jpg)
 
 Hay numerosas aplicaciones de los brazos robóticos uno de ellos es el paletizado automático de botellas pet. Ofrecen numerosas aplicaciones para el packaging en la industria el robot diseñado por nuestro grupo es un robot que se puede aplicar en este tipo de industria.
 

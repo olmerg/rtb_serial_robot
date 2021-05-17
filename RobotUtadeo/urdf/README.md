@@ -21,17 +21,21 @@ El proceso de diseño y construcción del robot se desarrolló en varias etapas.
 *Nota: Los planos en pdf y dwg se encuentran en la carpeta llamada Inventor y dentro hay otra que se llama planos, ahí se encuentran estos archivos por si se desea modificarlos, revisarlos o replicarlo.*
 
 1. El proceso de construcción de las piezas en 3D se realizó con los planos anteriormente mencionados, en primera instancia se realizó la construcción de cada una de las piezas por separado, las piezas fueron las bases, los eslabones y el gripper, adicional a ello también se diseñaron los tornillos y servomotores, pero pues estos solo con el fin de la visualización del robot en el CAD y URDF, a continuación se presenta una tabla de imágenes de las piezas pero estas también se encuentran en la carpeta inventor y dentro de esta carpeta hay otra que se llama piezas allí se encuentran cada una de las piezas en extensión .ipt que es la extensión de piezas de inventor, por si se desea implementar o hacer alguna modificación a estas.
+
 ![](https://1.bp.blogspot.com/-qTpQKYGFvsg/YKA_NUPomQI/AAAAAAAAAMU/-52LvwP-Vg0uzaEz9mMlKXZ9F92EuxhNgCNcBGAsYHQ/s16000/Piezas_Robot.PNG)
 
 1. Posterior a la realización de las piezas individuales se realizó la unión de estas en ensambles,  para importar las piezas al URDF y unirlas allí era mucho más complejo que hacerlo en el inventor, estos ensambles se realizaron teniendo en cuenta en que puntos se encontraban las articulaciones o grados de libertad esto con el fin que a la hora de importarlos a URDF se pudiera hacer la animación de estos mismos, estos ensambles se encuentran también dentro de la carpeta inventor y allí se encuentra otra carpeta que se denomina ensambles allí se encuentran los ensambles en extensión .iam por si se desea hacer alguna modificación o los ensambles en .stl que es la extensión que nos permite importar en el URDf. A continuación, como en la parte anterior se presenta una tabla con los respectivos ensambles.
 ![](https://1.bp.blogspot.com/-NuY3oVMiDaA/YKBBJLse3aI/AAAAAAAAAMk/cwimXunCVlULmXdeJieFtQCjV7C6VtKfwCNcBGAsYHQ/s16000/Ensambles.PNG)
 Como se mencionó anteriormente estos ensambles fueron con los que se realizó el URDF, por último, se presenta una imagen del robot ensamblado en inventor, este ensamble se realizó con los ensambles valga la redundancia anteriormente mencionados y presentados.
+
 ![](https://1.bp.blogspot.com/-I_E_1XU1BW4/YKBB4KGDf9I/AAAAAAAAAMs/Zb7Mij70cP41zUXxP_432zXiZ3V8ey0xQCNcBGAsYHQ/w640-h438/Solido.PNG)
 
 1. Posteriormente realizar corte láser, el material escogido fue acrílico, pues es un material resistente y no muy pesado.
+
 ![](https://1.bp.blogspot.com/-iXkMXQ_NM5I/YKAsrZDNEzI/AAAAAAAAAL0/N8tbkSOLtugoHY9OoZVSIzNRhisuxqUfgCNcBGAsYHQ/w640-h430/corte_laser.PNG)
 
 1. Construcción del robot
+
 ![](https://1.bp.blogspot.com/-yEGr8z6nn7w/YKAwFQkqPyI/AAAAAAAAAL8/efsItCRcM_IvtjUwD-B1FI61CesIgJfzACNcBGAsYHQ/s16000/Construccion.PNG)
 *Nota: Los tornillos que se usaron para la base tienen 7.5 cm de largo y 0.5 cm de ancho.*
 

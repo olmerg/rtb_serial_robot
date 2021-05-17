@@ -66,7 +66,7 @@ y por ultimo ejecutabamos el comando  "rosrun rqt_graph rqt_graph" - para ver su
 3. prueba bluetooth: Se realizo una prueba de funcionamiento del robot fisico mediante bluetooth utilizando una aplicacion movil y arduino, en arduino realizamos un codigo el cual nos permitia controlar el movimiento
 de los servomotores desde el celular.
 
-![image-2.png](attachment:image-2.png)
+![https://eliecerodriguez.blogspot.com/2021/05/blog-post.html]
 
 
 ## Grados de libertad robot

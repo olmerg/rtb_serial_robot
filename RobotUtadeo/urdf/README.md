@@ -15,8 +15,8 @@ Curso de Robotica Industrial 2021-I de Ingeniería en automatización de Univers
 
 
 
-[========]
-##Diseño y construcción del robot
+
+## Diseño y construcción del robot
 El proceso de diseño y construcción del robot se desarrolló en varias etapas.
 1. En primera instancia se tomaron medidas de las piezas de los robots que se encuentran en la universidad esto con el fin de tener una base para desarrollar nuestros propios planos, pues los motores son los mismos, estos planos fueron desarrollados en **Inventor** a continuación se presenta una imagen de los planos del robot.
 ![](https://1.bp.blogspot.com/-s6t6qwnHBo4/YKAqUocKcuI/AAAAAAAAALs/UqH3s3Znt9MiKztJL-CNOzT8xV4nnQvigCNcBGAsYHQ/s16000/PLANOS.PNG)
@@ -129,7 +129,7 @@ En el siguente video se explica con más detalle el diseño de los planos y el u
 
 1. Visualizar las trayectorias Cartesianas
 
-![](https://1.bp.blogspot.com/-kA1DcBoW0os/YKAaVWUYmAI/AAAAAAAAALE/43W_D6vPiiAb6sgnXhVjOBwNv_zNGIlzACNcBGAsYHQ/s16000/plot.PNG)
+	![](https://1.bp.blogspot.com/-kA1DcBoW0os/YKAaVWUYmAI/AAAAAAAAALE/43W_D6vPiiAb6sgnXhVjOBwNv_zNGIlzACNcBGAsYHQ/s16000/plot.PNG)
 
 1. Animación del robot haciendo las trayectorias
 	Debemos pasar nuestras coordenadas de mm a cm, y usar nuevamente el método ctraj, para calcular las trayectorias cartesianas.
@@ -150,7 +150,7 @@ En el siguente video se explica con más detalle el diseño de los planos y el u
 
 En el siguiente video [Trayectorias](https://robotutadeo.blogspot.com/2021/05/planeamiento-de-trayectorias.html "Trayectorias") se explica con más detalle el planeamiento de trayectorias del Robot Utadeo
 
-[========]
+
 ## Pruebas con el Bluetooth
 1. Cargar el archivo Arduino_firmware.ino en el arduino uno
 1. Identificar el puerto serial con el que se identifica el arduino al conectarlo al pc
@@ -158,18 +158,18 @@ En el siguiente video [Trayectorias](https://robotutadeo.blogspot.com/2021/05/pl
 En el siguente video se explica con más detalle las [Pruebas_Bluetooth](https://robotutadeo.blogspot.com/2021/05/bluetooth.html "Pruebas_Bluetooth")
 	> Nota: Antes de cargar el código al Arduino se recomienda desconectar el Bluetooth, en ocasiones genera errores.
 
-[========]
+
 ## Aplicación de este robot
 El objetivo con este robot es simular la automatización de un proceso químico
 es cierto que se requiere de otras máquinas y sensores a parte del brazo robótico, sin embargo trataremos de simular un proceso químico con la intervención del Robot Utadeo.
 
-![](https://lh3.googleusercontent.com/proxy/5YTCUzNqvajsRA9GcnwrR1Iye_LVDgwa6rl0y_m7BsL-DPH503zEEHoNxsT6rVmftXoTy_hTdKkWzVgQlgD1G3gMoCJgrkIH04POUqM4w9jPvKvpN59boZnUhK3id1Su-C-jQzO1EUon6JI5UX8oljwqJlc3lTfWLrcZq8No8RrFtFlsFWwQBg)
+![](https://img.interempresas.net/fotos/1537562.jpeg)
 
 > *"En este tipo de aplicaciones **la automatización no es opcional.** Es una necesidad. Debido a que, si no se hace, el personal que tenga contacto con la materia prima o el proceso puede sufrir **daños graves e incluso la muerte**". *
 
 Una vez identificado el proceso, el siguiente paso es hacer el planeamiento de trayectorias, para ello es necesario saber las caracteristicas del robot, si has leído con detalle habrás notado que anteriormente mostramos el espacio de trabajo del Robot Utadeo, por lo tanto solo nos queda explicar sus grados de libertad.
 
-[========]
+
 ## Grados de libertad
 
 ![](https://1.bp.blogspot.com/-YWXys-gXbP4/YKBsYzye7cI/AAAAAAAAANA/bH1TJGrZdMcc-4Td8NLyj2KuztSyO1_9ACNcBGAsYHQ/s16000/GradosLibertad.PNG)

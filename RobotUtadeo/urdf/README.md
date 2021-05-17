@@ -1,10 +1,15 @@
 # Proyecto Robot Utadeo 
 **Integrantes**:
 	- Jonathan Alexander Sechagua Guarnizo
+	
 	- Diego Carreño Bustacara
+	
 	- Jorge Lemos
+	
 	- Alberto Roa
+	
 Curso de Robotica Industrial 2021-I de Ingeniería en automatización de Universidad Jorge Tadeo Lozano
+
 **Profesor**: Olmer Garcia Bedoya (@olmerg)
 
 [========]

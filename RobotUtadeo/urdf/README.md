@@ -39,30 +39,43 @@ Como se mencionó anteriormente estos ensambles fueron con los que se realizó e
 1. Construcción del robot
 
 ![](https://1.bp.blogspot.com/-yEGr8z6nn7w/YKAwFQkqPyI/AAAAAAAAAL8/efsItCRcM_IvtjUwD-B1FI61CesIgJfzACNcBGAsYHQ/s16000/Construccion.PNG)
+
 *Nota: Los tornillos que se usaron para la base tienen 7.5 cm de largo y 0.5 cm de ancho.*
 
 ## Robot virtual en ROS
 Para tener un robot es ROS es necesario describrir sus frames, joint y links, lo cual es realizado a traves de un archivo xml llamado Unified Robot Description Format (URDF).
 1. Realizar el archivo urdf del robot(puede ser con piezas stl ,a través de cylinder o por archivos .dae (recomendado porque incluye texturas)) [RobotUtadeo(Urdf)](https://robotutadeo.blogspot.com/2021/05/urdf-del-robot-utadeo.html "RobotUtadeo(Urdf)")
 en los siguientes links [XML Robot Description Format (URDF)](http://wiki.ros.org/urdf/XML/model "XML Robot Description Format (URDF)") , [Examples](http://wiki.ros.org/action/fullsearch/urdf/Tutorials/Building%20a%20Visual%20Robot%20Model%20with%20URDF%20from%20Scratch?action=fullsearch&context=180&value=linkto%3A%22urdf%2FTutorials%2FBuilding+a+Visual+Robot+Model+with+URDF+from+Scratch%22 "Examples") encontrarás información necesaria para realizar el urdf.
+
 *Nota: Al final de este capitulo encontrarás un video donde hablaremos con más detalle sobre el diseño de los planos y el urdf del Robot Utadeo.*
+
 1. Generar el grafico de la cadena cinematica
 abrir una consola desde la carpeta donde está el urdf y ejecutar
 *urdf_to_graphiz planar_3dof.urdf*
+
 ![](https://1.bp.blogspot.com/-R_Jk9p67xYE/YKA6s1O391I/AAAAAAAAAME/XUs8RDI09BgNM05FtJccfPHH7Xkl7ePZwCNcBGAsYHQ/w141-h640/Cadena_cinem%25C3%25A1tica.PNG)
+
 1. Ver el diagrama de nodos con sus topicos por medio de:
 *rosrun rqt_graph rqt_graph*
+
 ![](https://1.bp.blogspot.com/-igMa8Ow_kc4/YKA7pAu4YGI/AAAAAAAAAMM/BctowQvvwfQhJxUSkLdnTecpRltRRM4CQCNcBGAsYHQ/w640-h230/Diagrama_Nodos.PNG)
+
 En el siguente video se explica con más detalle el diseño de los planos y el urdf del robot [Planos&URDF](https://robotutadeo.blogspot.com/2021/05/diseno-planos-y-urdf-del-robot-utadeo.html "Planos&URDF")
 
 [========]
 ## Planeamiento de trayectoria
 1. Importar el robot de la clase RobotUtadeo
+
 	![](https://lh3.googleusercontent.com/-AUCIVXdZjXY/YKAIdB9mD2I/AAAAAAAAAJk/s1eg40ZbowgZUA03E0ZUsVBFJ2McX4qGQCNcBGAsYHQ/w320-h43/Importar.PNG)
+	
 	en dicha clase se encuentra la ruta de la carpeta URDF del robot, además se establecen  diferentes valores articulares.
+	
 	![](https://1.bp.blogspot.com/-xVFdcngGShM/YKAN97gXG1I/AAAAAAAAAKE/etbAjLI5DXAse9gYETxqTmYqD_28kjmwwCNcBGAsYHQ/w400-h155/Clase.PNG)
+	
 1. Caracteristicas del Robot Utadeo
+
 	![](https://lh3.googleusercontent.com/-OlIB1XKusNg/YKAPuBUzuDI/AAAAAAAAAKM/e9KGSqLYFn8-7dRK73pTjK_13xg9JzSNgCNcBGAsYHQ/w353-h400/Robot.PNG)
+	
 	El Robot Utadeo tiene 5GDL cada grado de libertad tiene un rango de (-90° , 90°).
 	- Los tres primeros GDL (cadera, hombro, codo) tienen servomotores** Tower Pro MG995** que tienen las siguientes especificaciones:
 	• Peso: 55 g
@@ -72,7 +85,7 @@ En el siguente video se explica con más detalle el diseño de los planos y el u
 	• Voltaje de operación: 4.8 V a 7.2 V
 	• Ancho de banda: 5 µs
 	• Rango de temperatura: 0 ºC – 55 ºC
-	- El cuarto GDL (Muñeca) tiene un servomotor** Futaba S3003** que tiene las siguientes 		especificaciones:
+	- El cuarto GDL (Muñeca) tiene un servomotor** Futaba S3003** que tiene las siguientes especificaciones:
 	• Voltaje de operación 4.8-6 Volts.
 	• Peso 38 gr.
 	• Velocidad de trabajo
@@ -90,10 +103,14 @@ En el siguente video se explica con más detalle el diseño de los planos y el u
 	• Voltaje de operación: 4.8 V (~5V)
 	• Ancho de banda: 10 μs
 	• Rango de temperatura: 0 ºC – 55 ºC
+	
 	### Espacio de trabajo 
 	#### 	Vista Lateral
+	
 	![](https://1.bp.blogspot.com/-s9vUGvSHtL8/YKAUIp6PqtI/AAAAAAAAAKc/C0v6MVAp_fEEGGy0zdEVXM7PN7Vv6x9fwCNcBGAsYHQ/w320-h307/VistaLateral.PNG)
+	
 	#### 	Vista Superior
+	
 	![](https://1.bp.blogspot.com/-MoX6yk7piMQ/YKAVEfPUEXI/AAAAAAAAAKs/BtMtVV-AHaUrJn9oH7jriWbEeDZgcRSvQCNcBGAsYHQ/w320-h308/VistaSuperior.PNG)
 
 1. Trayectoria deseada del gripper para que el realice la letra **M**
@@ -102,25 +119,33 @@ En el siguente video se explica con más detalle el diseño de los planos y el u
 	> Nota: Las coordenas (x,y,z) deben estar dentro del espacio de trabajo.
 
 	 Estas son las coordenadas cartesianas para realizar la letra **M**
+	 
 	![](https://1.bp.blogspot.com/-DbJDHcreLWk/YKAW49yAcEI/AAAAAAAAAK0/QhiZeusDL18N26iW2gisESOYbtRDQTlFgCNcBGAsYHQ/s16000/TrayectoriaCartesiana.PNG)
+	
 1. Se usa ctraj(T0, T1, n), ctraj es una trayectoria cartesiana desde la pose SE3 T0 hasta T1 con n puntos que siguen un perfil de velocidad trapezoidal a lo largo de la trayectoria. La trayectoria cartesiana es una instancia SE3 que contiene n valores.
-	También usamos jtraj(q0, qf, N), jtraj es una trayectoria del espacio de la articulación 		donde las coordenadas de la articulación varían de q0(M) a qf(M), en N pasos.
+	También usamos jtraj(q0, qf, N), jtraj es una trayectoria del espacio de la articulación donde las coordenadas de la articulación varían de q0(M) a qf(M), en N pasos.
+	
 	![](https://1.bp.blogspot.com/-pHkB92tovu4/YKAZjGOW3nI/AAAAAAAAAK8/7uFOoNS_2Eca3jQKTznJU9Q91qXAq_mWQCNcBGAsYHQ/s16000/ctraj.PNG)
 
 1. Visualizar las trayectorias Cartesianas
+
 ![](https://1.bp.blogspot.com/-kA1DcBoW0os/YKAaVWUYmAI/AAAAAAAAALE/43W_D6vPiiAb6sgnXhVjOBwNv_zNGIlzACNcBGAsYHQ/s16000/plot.PNG)
 
 1. Animación del robot haciendo las trayectorias
 	Debemos pasar nuestras coordenadas de mm a cm, y usar nuevamente el método ctraj, para calcular las trayectorias cartesianas.
+	
 	![](https://1.bp.blogspot.com/-kT7gXuNJ2nA/YKAboE6V5OI/AAAAAAAAALM/gicEahPJ4Kw5Bcf2BZZOu5T1u-acPiyfwCNcBGAsYHQ/s16000/Ctraj2.PNG)
 
 1. Ya teniendo las trayectorias cartesianas, calculamos la cinemática inversa, esto con el fin de obtener los valores que debe tomar cada articulación.
+
 	![](https://1.bp.blogspot.com/-Y3-hrUeaGqU/YKAc83CaNeI/AAAAAAAAALU/xYHa4tFxosgjR8saN1SAoHOpr7bHfgvoQCNcBGAsYHQ/s16000/ikine.PNG)
 
 1. Con los valores articulares obtenidos anteriormente, usamos el método jtraj, el cual calcula un polinomio de grado 5 para cada articulación que lleva de P_inicial a P_final, en un intervalo n.
+
 	![](https://1.bp.blogspot.com/-3BDPa43vu7A/YKAd8_o9RcI/AAAAAAAAALc/eMlUS8BAlg8q_DJx801grB5s5oLw0EoGwCNcBGAsYHQ/s16000/jtraj.PNG)
 
 1. Animación del robot
+
 	![](https://1.bp.blogspot.com/-knuzAw2E_N8/YKAe9mxp6cI/AAAAAAAAALk/pwwMR4e1K-Q8RlLBVloflZu2kf0aLriUACNcBGAsYHQ/s16000/Animacion.PNG)
 
 En el siguiente video [Trayectorias](https://robotutadeo.blogspot.com/2021/05/planeamiento-de-trayectorias.html "Trayectorias") se explica con más detalle el planeamiento de trayectorias del Robot Utadeo
@@ -137,23 +162,33 @@ En el siguente video se explica con más detalle las [Pruebas_Bluetooth](https:/
 ## Aplicación de este robot
 El objetivo con este robot es simular la automatización de un proceso químico
 es cierto que se requiere de otras máquinas y sensores a parte del brazo robótico, sin embargo trataremos de simular un proceso químico con la intervención del Robot Utadeo.
+
 ![](https://lh3.googleusercontent.com/proxy/5YTCUzNqvajsRA9GcnwrR1Iye_LVDgwa6rl0y_m7BsL-DPH503zEEHoNxsT6rVmftXoTy_hTdKkWzVgQlgD1G3gMoCJgrkIH04POUqM4w9jPvKvpN59boZnUhK3id1Su-C-jQzO1EUon6JI5UX8oljwqJlc3lTfWLrcZq8No8RrFtFlsFWwQBg)
-> *"En este tipo de aplicaciones **la automatización no es opcional.** Es una necesidad. 	Debido a que, si no se hace, el personal que tenga contacto con la materia prima o el proceso puede sufrir **daños graves e incluso la muerte**". *
+
+> *"En este tipo de aplicaciones **la automatización no es opcional.** Es una necesidad. Debido a que, si no se hace, el personal que tenga contacto con la materia prima o el proceso puede sufrir **daños graves e incluso la muerte**". *
 
 Una vez identificado el proceso, el siguiente paso es hacer el planeamiento de trayectorias, para ello es necesario saber las caracteristicas del robot, si has leído con detalle habrás notado que anteriormente mostramos el espacio de trabajo del Robot Utadeo, por lo tanto solo nos queda explicar sus grados de libertad.
 
 [========]
 ## Grados de libertad
+
 ![](https://1.bp.blogspot.com/-YWXys-gXbP4/YKBsYzye7cI/AAAAAAAAANA/bH1TJGrZdMcc-4Td8NLyj2KuztSyO1_9ACNcBGAsYHQ/s16000/GradosLibertad.PNG)
+
 dado que todos los servomotores son de 180º, se decide ubicar todo los servos en 0º cuando el robot está totalmente estirado por lo tanto se tendrá un rango de (-90º , 90º). lo cual nos permite planear las trayectorias con un mejor rango de movimiento.
-	*Nota: Esto se hace en el URDF, para el robot en físico se aconseja ubicar todos los servomotores en 90º cuando el robot está totalmente estirado.*
+
+*Nota: Esto se hace en el URDF, para el robot en físico se aconseja ubicar todos los servomotores en 90º cuando el robot está totalmente estirado.*
 
 ## Usando la clase swif_serial y el urdf del robot para visualizarlo en swift y poder mover el robot
+
 ![](https://1.bp.blogspot.com/-rd1bBvtRfwo/YKB7vLtfNkI/AAAAAAAAANY/LmeOH8QALFIF1wdEw2Cuzv8ayw1djy0RACNcBGAsYHQ/w640-h346/Diagrama.PNG)
+
 Con la información del espacio de trabajo, los grados de libertad y el proceso que se realizará, procedemos a diseñar las trayectorias.
 La trayectorias se diseñan con el objetivo de recoger un envase, y luego pasar por diferentes etapas donde se vierten componentes químicos y finalmente vaciar estos componentes químicos en otra etapa del proceso automatizado.
+
 ![](https://1.bp.blogspot.com/-7JFY_beJpow/YKBxMswqhxI/AAAAAAAAANI/6aHH49UdIHs21Bnphjf2QTr8tYQyVLligCNcBGAsYHQ/w640-h566/Trayect.PNG)
+
 ![](https://1.bp.blogspot.com/-ogXLrkYNtIc/YKB2QfUyktI/AAAAAAAAANQ/aK0f70mFAeQ8o6J6Lyxn6miiqj9aHJDawCNcBGAsYHQ/s749/Trayec2.PNG)
+
 En el siguiente video [Trayectorias](https://robotutadeo.blogspot.com/2021/05/trayectorias-con-robot.html "Trayectorias") se explica la última etapa de este proyecto.
 
 

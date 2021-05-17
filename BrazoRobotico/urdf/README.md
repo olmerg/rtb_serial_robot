@@ -6,7 +6,7 @@ Integrantes:
     - Jorge Eliecer Rodriguez
     - Luis Carlos Escobar
 
-![image.png](attachment:image.png)
+![](file:///C:/Users/Migue/Desktop/brazorobotico.jpeg)
 
 ## Construccion del robot
 

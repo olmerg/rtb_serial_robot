@@ -14,7 +14,9 @@ Curso de Robotica Industrial 2021-I de Ingeniería en automatización de Univers
 **Profesor**: Olmer Garcia Bedoya (@olmerg)
 
 [========]
+
 ##Diseño y construcción del robot
+
 El proceso de diseño y construcción del robot se desarrolló en varias etapas.
 1. En primera instancia se tomaron medidas de las piezas de los robots que se encuentran en la universidad esto con el fin de tener una base para desarrollar nuestros propios planos, pues los motores son los mismos, estos planos fueron desarrollados en **Inventor** a continuación se presenta una imagen de los planos del robot.
 ![](https://1.bp.blogspot.com/-s6t6qwnHBo4/YKAqUocKcuI/AAAAAAAAALs/UqH3s3Znt9MiKztJL-CNOzT8xV4nnQvigCNcBGAsYHQ/s16000/PLANOS.PNG)

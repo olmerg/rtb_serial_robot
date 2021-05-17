@@ -33,7 +33,6 @@ El proceso de diseño y construcción del robot se desarrolló en varias etapas.
 	![](https://1.bp.blogspot.com/-NuY3oVMiDaA/YKBBJLse3aI/AAAAAAAAAMk/cwimXunCVlULmXdeJieFtQCjV7C6VtKfwCNcBGAsYHQ/s16000/Ensambles.PNG)
 	
 Como se mencionó anteriormente estos ensambles fueron con los que se realizó el URDF, por último, se presenta una imagen del robot ensamblado en inventor, este ensamble se realizó con los ensambles valga la redundancia anteriormente mencionados y presentados.
-
 	![](https://1.bp.blogspot.com/-I_E_1XU1BW4/YKBB4KGDf9I/AAAAAAAAAMs/Zb7Mij70cP41zUXxP_432zXiZ3V8ey0xQCNcBGAsYHQ/w640-h438/Solido.PNG)
 	
 1. Posteriormente realizar corte láser, el material escogido fue acrílico, pues es un material resistente y no muy pesado.

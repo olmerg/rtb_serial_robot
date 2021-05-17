@@ -12,6 +12,9 @@
 Curso de Robotica Industrial 2021-I de Ingeniería en automatización de Universidad Jorge Tadeo Lozano
 
 **Profesor**: Olmer Garcia Bedoya (@olmerg)
+
+
+
 [========]
 ##Diseño y construcción del robot
 El proceso de diseño y construcción del robot se desarrolló en varias etapas.

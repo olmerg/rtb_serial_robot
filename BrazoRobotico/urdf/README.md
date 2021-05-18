@@ -66,7 +66,7 @@ y por ultimo ejecutabamos el comando  "rosrun rqt_graph rqt_graph" - para ver su
 3. prueba bluetooth: Se realizo una prueba de funcionamiento del robot fisico mediante bluetooth utilizando una aplicacion movil y arduino, en arduino realizamos un codigo el cual nos permitia controlar el movimiento
 de los servomotores desde el celular.
 
-![]()
+![](https://1.bp.blogspot.com/-TB8zfIpWOJ8/YKMDeEHttNI/AAAAAAAAAMs/dKskzbW3FcsBaTpAfkfJtOsOoUwzw4jfgCLcBGAsYHQ/s320/imageeeen%2B2.jpg)
 
 
 ## Grados de libertad robot
@@ -88,16 +88,16 @@ Las trayectorias del brazo robotico que realizamos las hicimos en jupyter notebo
 
 1. Realizamos una trayectoria para la letra L utilizando SE3, ingresamos las trayectorias x,y,z requeridas para la trayectoria
 
-![image.png](attachment:image.png) 
+![](https://1.bp.blogspot.com/-5qMYxBPZFQY/YKMDzjQb6ZI/AAAAAAAAAM0/FIxHTsXILRgTBD61m9cAuagXiqTr9v5gwCLcBGAsYHQ/s0/WhatsApp%2BImage%2B2021-05-17%2Bat%2B6.51.30%2BPM.jpeg) 
 
 2. Utilizamos el metodo Ctraj y Jtraj para hallar la trayectoria de la articulacion
 3. Visualizamos la trayectoria cartesiana
 
-![image.png](attachment:image.png)
+![](https://1.bp.blogspot.com/-DeH7boWp0B0/YKMEC_HqUoI/AAAAAAAAAM4/g654fDeux2UAfOX1zgmKHZ8t-GfLPqT6gCLcBGAsYHQ/s320/WhatsApp%2BImage%2B2021-05-17%2Bat%2B6.51.10%2BPM.jpeg)
 
 4. Ya teniendo las trayectorias calculamos la cinematica inversa con el metodo ikine_min
 
-![image.png](attachment:image.png)
+![](https://1.bp.blogspot.com/-wdn0FjdNrqs/YKMEYLmW1qI/AAAAAAAAANE/BqdDoRY0icU2_USU-Pjy5X_H5cAU805JgCLcBGAsYHQ/s0/WhatsApp%2BImage%2B2021-05-17%2Bat%2B6.51.39%2BPM.jpeg)
 
 ## Aplicación brazo robótico
 

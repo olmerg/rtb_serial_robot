@@ -6,7 +6,7 @@ Integrantes:
     - Jorge Eliecer Rodriguez
     - Luis Carlos Escobar
 
-![]()
+![](https://1.bp.blogspot.com/-Z0goxRwMFes/YKME2x9vCiI/AAAAAAAAANM/pVVJaXpkmXMc-nVXEVfqmeLRG4KvJNWwACLcBGAsYHQ/s320/WhatsApp%2BImage%2B2021-05-17%2Bat%2B4.11.42%2BPM.jpeg)
 
 ## Construccion del robot
 

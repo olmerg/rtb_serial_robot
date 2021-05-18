@@ -92,7 +92,7 @@
             <visual>
                 <origin xyz="0.0 0.0 0.0" rpy="1.57 0.0 0.0"/>
                 <geometry>
-                    <mesh filename="package://lesson_urdf/meshes/visual/Muñeca.stl" scale="0.1 0.1 0.1"/>
+                    <mesh filename="package://lesson_urdf/meshes/visual/Muneca.stl" scale="0.1 0.1 0.1"/>
                 </geometry>
                 <material name="blue"/>
             </visual>
@@ -110,7 +110,7 @@
             <visual>
                 <origin xyz="0.0 0.0 0.0" rpy="1.57 0.0 0.0"/>
                 <geometry>
-                    <mesh filename="package://lesson_urdf/meshes/visual/Gripper.stl" scale="0.1 0.1 0.1"/>
+                    <mesh filename="package://lesson_urdf/meshes/visual/gripper.stl" scale="0.1 0.1 0.1"/>
                 </geometry>
                 <material name="red"/>
             </visual>

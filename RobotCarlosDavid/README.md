@@ -5,7 +5,7 @@ En este proyecto se crea el entorno virtual en Gazebo de un brazo robotico .
 - **Cuales modificaciones se hicieron el arduino**
 - **como ejecutar el proyecto**
 # Colaboradores
--* Juan David Rojas Rojas
--* Carlos Pachon Diaz
+-** Juan David Rojas Rojas
+-** Carlos Pachon Diaz
 
 

@@ -10,7 +10,7 @@ class Planar3DOF(ERobot):
 
     def __init__(self):
 
-        args = super().urdf_to_ets_args(
+        args = super().URDF_read(
             "lesson_urdf/urdf/planar_3dof.urdf")
         
         super().__init__(

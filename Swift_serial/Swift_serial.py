@@ -12,9 +12,9 @@ import time
 import serial
 from math import pi
 
+from roboticstoolbox.backends.Swift import Swift
 
-
-class Swift_serial(rtb.backends.Swift):  # pragma nocover
+class Swift_serial(Swift):  # pragma nocover
     """
     Graphical and Hardware backend using Serial_Swift
 
@@ -60,7 +60,7 @@ class Swift_serial(rtb.backends.Swift):  # pragma nocover
         None.
 
         """
-        super(Swift_serial, self).__init__(realtime=False)
+        super(Swift_serial, self).__init__()
         print('init serial ',port,' speed ',baudrate)
         self.serial=serial.Serial(timeout=1)
         self.serial.baudrate = baudrate
@@ -74,8 +74,11 @@ class Swift_serial(rtb.backends.Swift):  # pragma nocover
             self, ob, show_robot=True, show_collision=False,
             readonly=False):
         super().add(ob,show_robot=show_robot,show_collision=show_collision,readonly=readonly)
-        self.robots[-1]['ob'].q=0*self.robots[-1]['ob'].q
-        self.q_1=self.robots[-1]['ob'].q
+        #TODO: verify the correct robot
+        self.robots=[]
+        self.robots.append(self.swift_objects[0])
+        self.robots[-1].q=0*self.robots[-1].q
+        self.q_1=self.robots[-1].q
         self.serial.write(b'h')
         
     
@@ -109,11 +112,11 @@ class Swift_serial(rtb.backends.Swift):  # pragma nocover
         None.
 
         """
-        super().step(dt)
+        super().step(0.01)
         for robot_object in self.robots:
-            robot = robot_object['ob']
+            robot = robot_object
 
-            if robot_object['readonly'] or robot.control_type == 'p':
+            if self.swift_options[0]["readonly"] or robot.control_type == 'p':
                 pass            # pragma: no cover
 
             elif robot.control_type == 'v':

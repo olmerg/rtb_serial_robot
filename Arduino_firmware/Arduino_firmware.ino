@@ -95,7 +95,7 @@ void loop(){
     angulomuneca=constrain(angulomuneca,0,180);//restringimos el valor de 0 a 180
     angulomano=constrain(angulomano,0,180);//restringimos el valor de 0 a 180
     angulohombro=constrain(angulohombro,0,180);
-    
+    delayMicroseconds(10);
   }
   Rotacion.write(angulorotacion);  
   Hombro.write(angulohombro);

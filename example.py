@@ -16,7 +16,7 @@ from math import pi
 if __name__ == '__main__':   # pragma nocover
 
     env = Swift_serial('COM4',115200)
-    env.launch()
+    env.launch(realtime=False)
     
     #posicion inicial (aqui cambiar por el robot realizado)
     robot = rtb.models.UR3()
@@ -26,7 +26,7 @@ if __name__ == '__main__':   # pragma nocover
     # animar generando una trayectoria
     qt = rtb.tools.trajectory.jtraj(np.array([0, 0, 0, 0,0, 0]), np.array([pi/2,0, pi/2, pi/2,pi/2, 0]), 20)
     
-    for q in qt.y:
+    for q in qt.q:
          print(q)
          robot.q=q
          env.step(0.1)

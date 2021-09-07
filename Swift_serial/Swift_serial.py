@@ -93,8 +93,8 @@ class Swift_serial(Swift):  # pragma nocover
         """
 
         super().reset
-        self.robots[-1]['ob'].q=0*self.robots[-1]['ob'].q
-        self.q_1=self.robots[-1]['ob'].q
+        self.robots[-1].q=0*self.robots[-1].q
+        self.q_1=self.robots[-1].q
         self.serial.write(b'h')
         self.step(0.01)
 

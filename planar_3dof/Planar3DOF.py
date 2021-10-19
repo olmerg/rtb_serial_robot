@@ -1,7 +1,7 @@
 import numpy as np
 from roboticstoolbox.robot.ERobot import ERobot
 from math import pi
-
+import os
 
 class Planar3DOF(ERobot):
     """
@@ -11,7 +11,7 @@ class Planar3DOF(ERobot):
     def __init__(self):
 
         args = super().URDF_read(
-            "lesson_urdf/urdf/planar_3dof.urdf")
+            "lesson_urdf/urdf/planar_3dof.urdf",tld=Planar3DOF.load_my_path())
         
         super().__init__(
             args[0],
@@ -31,6 +31,10 @@ class Planar3DOF(ERobot):
 
         # nominal table top picking pose
         self.addconfiguration("qn", np.array([0, pi/4, pi]))
+    @staticmethod
+    def load_my_path():
+            #print(__file__)
+            os.chdir(os.path.dirname(__file__))
 if __name__ == '__main__':   # pragma nocover
 
     robot = Planar3DOF()

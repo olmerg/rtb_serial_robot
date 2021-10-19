@@ -5,8 +5,8 @@ This is the example to execute the planar3DOF robot
 @author olmerg
 
 """
-import sys  
-sys.path.insert(0, 'planar_3d')
+#import sys  
+#sys.path.insert(0, 'planar_3d')
 
 from Planar3DOF import Planar3DOF
 
@@ -22,9 +22,9 @@ T =robot.fkine(robot.qs)
 print(T)
 
 #robot.plot(robot.qs,backend='swift')
-from roboticstoolbox.backends.Swift import Swift
+from roboticstoolbox.backends.swift import Swift
 env = Swift()
-env.launch()
+env.launch(realTime=True)
 env.add(robot)
 
 env.step(1.0)

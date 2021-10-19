@@ -12,7 +12,7 @@ import time
 import serial
 from math import pi
 
-from roboticstoolbox.backends.Swift import Swift
+from roboticstoolbox.backends.swift import Swift
 
 class Swift_serial(Swift):  # pragma nocover
     """
@@ -23,6 +23,7 @@ class Swift_serial(Swift):  # pragma nocover
      - sent h to return to home the robot (applied in the moment to add the robot or to reset the enviroment)
 
     **Note** You require to add install pySerial to use this library `pip install pyserial`
+En pruebas
 
     Example:
 
@@ -38,9 +39,6 @@ class Swift_serial(Swift):  # pragma nocover
             env.step(0.1)
         # return to home
         env.reset()
-
-
-
     """
     def __init__(self, port,baudrate, display=True):
         """
@@ -71,9 +69,9 @@ class Swift_serial(Swift):  # pragma nocover
         self.q_1=None
 
     def add(
-            self, ob, show_robot=True, show_collision=False,
+            self, ob,  robot_alpha=1.0, collision_alpha=0.0,
             readonly=False):
-        super().add(ob,show_robot=show_robot,show_collision=show_collision,readonly=readonly)
+        super().add(ob, robot_alpha=robot_alpha, collision_alpha=collision_alpha,readonly=readonly)
         #TODO: verify the correct robot
         self.robots=[]
         self.robots.append(self.swift_objects[0])

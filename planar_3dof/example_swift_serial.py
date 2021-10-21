@@ -16,20 +16,20 @@ from math import pi
 
 if __name__ == '__main__':   # pragma nocover
 
-    env = Swift_serial('COM4',115200)
+    env = Swift_serial('COM6',115200)
     
     
     #posicion inicial (aqui cambiar por el robot realizado)
     robot=Planar3DOF()
     print(robot)
-    print(robot.to_dict)
+    #print(robot.to_dict)
     # the robot should start in home 
     env.launch()
     env.add(robot)
 
     qt = rtb.tools.trajectory.jtraj(np.array([0, 0, 0]), np.array([pi/2, -pi/3, pi/2]), 20)
     
-    for q in qt.y:
+    for q in qt.q:
          print(q)
          robot.q=q
          env.step(0.1)

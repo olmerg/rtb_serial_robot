@@ -1,4 +1,4 @@
-#Gia de Git clone
+#Guia de Git clone
 1. Descargar Git 
  - [Link Downloading Git](https://git-scm.com/download/win)
 2. Instalar las extencion 

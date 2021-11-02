@@ -4,5 +4,5 @@ Profesor: Olmer Garcia Bedoya (@olmerg)
 
 Grupo 1: Juan Sebastian Reina-Valentina Vega-Cristian Paez
 
-![Image of Yaktocat](https://github.com/olmerg/rtb_serial_robot/edit/main/Proyecto%20Camara/Imagenes/Imagen1)
+![Image of Yaktocat](https://github.com/olmerg/rtb_serial_robot/Proyecto%20Camara/Imagenes/Imagen1)
 

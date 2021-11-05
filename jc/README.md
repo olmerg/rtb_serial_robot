@@ -1,20 +1,13 @@
-#Guia de Git clone
-1. Descargar Git 
- - [Link Downloading Git](https://git-scm.com/download/win)
-2. Instalar las extencion 
- - Git Graph
-3. Crear un nuevo terminal 
-~~~
-git clone https://github.com/olmerg/rtb_serial_robot.git
-~~~
-4. Autentifica tu cuenta en GitHub y verificala 
- - Ecriba en el termial el siguiente comando
-~~~
-git config --global user.email "correo@gmail.com"
-git config --global user.name "nombre"
-~~~
-5. Crear un archivo ".md" 
-6. Ir a Source Control (ctrl + Shift + G)
- - View and More Actions
- - Commit
- - Commit All 
+# PROYECTO FINAL
+![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/fondo.png)
+
+# Identificacion del reto
+
+## Descripción 📃
+Debido al covid 19, muchos hospitales y laboratorios tuvieron múltiples
+problemas para continuar trabajando en el análisis de pruebas o muestras,
+además con la llegada de la crisis aumentaron la cantidad de muestras,
+debido a esto se desea probar robots colaborativos para optimizar los
+procesos en los laboratorios.
+
+el robot seleccionado para el proyecto final fue un robot de 6 grados de libertad Los propósitos generales del desarrollo de este robot son la versatilidad y la adaptabilidad.con el fin de Acelerar la obtención de los análisis de los laboratorios.

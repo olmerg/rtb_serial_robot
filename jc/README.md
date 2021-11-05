@@ -1,5 +1,5 @@
 # PROYECTO FINAL
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/fondo.png)
+![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/robot1.jpeg)
 
 # Identificacion del reto
 

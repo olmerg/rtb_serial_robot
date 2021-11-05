@@ -12,6 +12,28 @@ procesos en los laboratorios.
 
 el robot seleccionado para el proyecto final fue un robot de 6 grados de libertad Los propósitos generales del desarrollo de este robot son la versatilidad y la adaptabilidad.con el fin de Acelerar la obtención de los análisis de los laboratorios.
 
+### Contenido
+
+1. Descripcion elaboracion del modelo
+
+1. simulacion URDF
+
+
+1. Cinematica directa
+
+
+1. Cinematica inversa
+
+
+1. Trayectorias
+
+
+1. Visualizacion final
+
+
+1. Aplicacion serial arduino
+
+
 
 
 

@@ -1,7 +1,7 @@
 # PROYECTO FINAL
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/robot1.jpeg)
 
-# Identificacion del reto
+# Identificacion del reto 🤖
 
 ## Descripción 📃
 Debido al covid 19, muchos hospitales y laboratorios tuvieron múltiples

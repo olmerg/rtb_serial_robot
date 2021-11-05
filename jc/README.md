@@ -1,7 +1,7 @@
 # PROYECTO FINAL
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/robot1.jpeg)
 
-# Identificacion del reto 🤖
+# Identificación del reto 🤖
 
 ## Descripción 📃
 Debido al covid 19, muchos hospitales y laboratorios tuvieron múltiples
@@ -14,9 +14,9 @@ el robot seleccionado para el proyecto final fue un robot de 6 grados de liberta
 
 ### Contenido
 
-1. Descripcion elaboracion del modelo
+1. Descripción de la elaboración del modelo
 
-1. simulacion URDF
+1. simulación URDF
 
 
 1. Cinematica directa
@@ -28,10 +28,10 @@ el robot seleccionado para el proyecto final fue un robot de 6 grados de liberta
 1. Trayectorias
 
 
-1. Visualizacion final
+1. Visualización final
 
 
-1. Aplicacion serial arduino
+1. Aplicación serial arduino
 
 
 

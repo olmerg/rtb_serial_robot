@@ -19,7 +19,7 @@ el robot seleccionado para el proyecto final fue un robot de 6 grados de liberta
 1. simulación URDF
 
 
-1. Cinematica directa
+1. Cinematica directa en python
 
 
 1. Cinematica inversa
@@ -64,7 +64,22 @@ A continuación se usan los ensambles simulados en formato stl para hacer el URD
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/WhatsApp%20Image%202021-11-04%20at%205.21.16%20PM.jpeg)
 
 
+#### 2. Cinematica directa en python 🐍-
+1. inicialmente se importan las librerias que requiere python para ejecutar el codigo satisfactoriamente.
 
+![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001356.png)
+![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001556.png)
+![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001647.png)
+![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001741.png)
+![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001831.png
+![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001948.png)
+#### 2. Cinematica inversa-
+
+#### 2. Trayectorias-
+
+#### 2. Visualización final-
+
+#### 2. Aplicación serial arduino-
 
 
 

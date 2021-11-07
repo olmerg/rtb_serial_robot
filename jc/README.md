@@ -1,4 +1,4 @@
-# PROYECTO FINAL
+# PROYECTO FINAL  🚀
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/robot1.jpeg)
 
 # Identificación del reto 🤖
@@ -48,7 +48,7 @@ Inicialmente se elaboro el modelo de cada una de las piezas del robot en invento
 
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/WhatsApp%20Image%202021-10-05%20at%2012.14.51%20AM.jpeg)
 
-#### 2. simulación URDF-
+#### 2. simulación URDF ROS 🐢 -
 
 A continuación se usan los ensambles simulados en formato stl para hacer el URDF del robot y la simulación de movimientos e identificar las limitaciones de movimiento
 

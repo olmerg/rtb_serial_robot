@@ -66,7 +66,8 @@ A continuación se usan los ensambles simulados en formato stl para hacer el URD
 
 #### 3. Cinematica directa en python 🐍-
 
-
+Consiste en determinar cual es la posición y orientación del extremo final del robot, con respecto a un sistema de coordenadas que se toma como referencia, conocidos los valores de las articulaciones y los parámetros geométricos de los elementos del robot
+Ya de
 1.  inicialmente se importan las librerias que requiere python para ejecutar el codigo satisfactoriamente.
 
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001356.png)

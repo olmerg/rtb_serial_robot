@@ -3,7 +3,7 @@
 
 # Identificación del reto 🤖
 
-## Descripción 📃
+## 📃 Descripción
 Debido al covid 19, muchos hospitales y laboratorios tuvieron múltiples
 problemas para continuar trabajando en el análisis de pruebas o muestras,
 además con la llegada de la crisis aumentaron la cantidad de muestras,
@@ -12,7 +12,7 @@ procesos en los laboratorios.
 
 el robot seleccionado para el proyecto final fue un robot de 6 grados de libertad Los propósitos generales del desarrollo de este robot son la versatilidad y la adaptabilidad.con el fin de Acelerar la obtención de los análisis de los laboratorios.
 
-### Contenido
+### 📃 Contenido
 
 1. Descripción de la elaboración del modelo
 

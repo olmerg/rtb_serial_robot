@@ -4,9 +4,6 @@ Profesor: Olmer Garcia Bedoya (@olmerg)
 
 Grupo 1: Juan Sebastian Reina-Valentina Vega-Cristian Paez
 
-![2222](LINK)
-
-
 # PROYECTO FINAL ROBÓTICA INDUSTRIAL 
 
 # Identificación del reto 🦾📷
@@ -60,13 +57,12 @@ Inventor, manteniendo las dimensiones del robot fisico que pedimos prestado en l
 hacer los ensambles necesarios para simular posteriormente los URDF en ROS.  
 
 
-![2222]()
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Listado%20Piezas%20del%20Cuerpo.PNG)
 Listado de piezas del cuerpo del robot
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Listado%20Piezas%20de%20la%20Pinza.PNG)
 Listado de piezas de la pinza del robot
 
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Listado%20Piezas%20del%20Cuerpo.PNG)
 
 #### 2. simulación URDF ROS 🐢 -
 

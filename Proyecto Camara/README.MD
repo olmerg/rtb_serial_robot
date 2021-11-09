@@ -63,10 +63,10 @@ hacer los ensambles necesarios para simular posteriormente los URDF en ROS.
 ![2222]()
 Listado de piezas del cuerpo del robot
 
-![2222]()
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Listado%20Piezas%20de%20la%20Pinza.PNG)
+Listado de piezas de la pinza del robot
 
-
-![2222]()
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Listado%20Piezas%20del%20Cuerpo.PNG)
 
 #### 2. simulación URDF ROS 🐢 -
 

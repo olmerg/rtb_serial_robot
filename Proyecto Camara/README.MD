@@ -9,7 +9,7 @@ Grupo 1: Juan Sebastian Reina-Valentina Vega-Cristian Paez
 
 # PROYECTO FINAL ROBÓTICA INDUSTRIAL 
 
-# Identificación del reto 🤖📷
+# Identificación del reto 🦾📷
 
 ## 📃 Descripción
 Nuestro reto consiste en desarrollar un brazo robótico camarógrafo, es decir, un brazo robótico 
@@ -26,13 +26,15 @@ Esta es nuestra forma de acercarnos a la fusión arte y ciencia que se define co
 el más importante de la universidad Jorge Tadeo Lozano.
 
 
-el robot seleccionado para el proyecto final fue un robot de 6 grados de libertad Los propósitos generales del desarrollo de este robot son la versatilidad y la adaptabilidad.con el fin de Acelerar la obtención de los análisis de los laboratorios.
+El robot seleccionado para el proyecto final fue un robot de 6 grados de libertad Los propósitos generales del 
+desarrollo de este robot son la versatilidad y la adaptabilidad.con el fin de Acelerar la obtención de los 
+análisis de los laboratorios.
 
-### 📃 Contenido
+### Contenido 📑
 
 1. Descripción de la elaboración del modelo
 
-1. simulación URDF
+1. Simulación URDF
 
 
 1. Cinematica directa en python

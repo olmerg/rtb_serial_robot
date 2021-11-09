@@ -4,7 +4,7 @@ Profesor: Olmer Garcia Bedoya (@olmerg)
 
 Grupo 1: Juan Sebastian Reina-Valentina Vega-Cristian Paez
 
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Tarjetas.png)
+![2222](LINK)
 
 
 # PROYECTO FINAL ROBÓTICA INDUSTRIAL 

@@ -79,7 +79,7 @@ Ya con todas con todas las piezas diseñadas, realizamos el ensamblaje del robot
 
 Ensamble completo del robot
 
-#### 2. simulación URDF ROS 🐢 -
+#### 2. simulación URDF ROS 
 
 Con el ensamblaje realizado procedimos a obtener los 6 archivos STL que necesitamos, para posteriormente recrear el robot en ROS
 
@@ -107,6 +107,10 @@ STL Link Muñeca
 
 STL Link Gripper
 
+Luego pro
+![2222]()
+
+asdasfdac
 
 #### 3. Cinematica directa en python 🐍-
 

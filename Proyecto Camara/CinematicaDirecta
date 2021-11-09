@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+"""
+pip install roboticstoolbox-python
+"""
+
+from roboticstoolbox import DHRobot,RevoluteDH,PrismaticDH
+import roboticstoolbox as rtb
+import numpy as np
+from math import pi
+
+
+class RobotRPPR(DHRobot):
+    def __init__(self):
+        super().__init__(
+            [
+                RevoluteDH(d=0.02,alpha=pi/2,qlim=[-pi,pi]),
+                RevoluteDH(a=0.123,alpha=0,qlim=[-pi,pi]),
+                RevoluteDH(a=0.126,alpha=0,qlim=[-pi,pi]),
+                RevoluteDH(alpha=pi/2,offset=pi/2,qlim=[-pi,pi]),
+                RevoluteDH(d=0.062,alpha=0,qlim=[-pi,pi]),
+
+
+            ], name="Robot RPPR")
+        self.addconfiguration("qz", np.array([0, 0, 0, 0, 0]))
+        self.addconfiguration("qr", np.array([0,0,0,0,0 ]))
+
+
+my_robot= RobotRPPR()
+print(my_robot)
+my_robot.q=my_robot.qz
+my_robot.plot(my_robot.qr)
+"""
+#ejemplo 2 (una trajectoria)
+posicion_motores = np.array([pi/4,0.12,0.12,0 ])
+qt = rtb.jtraj(my_robot.qz, posicion_motores, 50)
+my_robot.plot(qt.q, movie='ejemplo_robot_rppr.gif')
+"""
+#ejemplo 3 (usar teach)
+my_robot.teach()

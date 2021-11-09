@@ -20,7 +20,7 @@ if __name__ == '__main__':   # pragma nocover
     
     
     #posicion inicial (aqui cambiar por el robot realizado)
-    robot=Planar3DOF()
+    robot=Planar5DOF()
     print(robot)
     #print(robot.to_dict)
     # the robot should start in home 

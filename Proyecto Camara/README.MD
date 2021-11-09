@@ -59,19 +59,22 @@ hacer los ensambles necesarios para simular posteriormente los URDF en ROS.
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Listado%20Piezas%20del%20Cuerpo.PNG)
 
-Listado de piezas del cuerpo del robot
+		Listado de piezas del cuerpo del robot
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Listado%20Piezas%20de%20la%20Pinza.PNG)
 
-Listado de piezas de la pinza del robot
+		Listado de piezas de la pinza del robot
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaPiezaCuerpoRobot1.PNG)
 
-Soporte Base de Servomotores(Hombro)
+		Soporte Base de Servomotores(Hombro)
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaPiezaCuerpoRobot2.PNG)
 
-ServoMotor (MG995)
+		ServoMotor (MG995)
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaEnsambeCompleto.PNG)
+		Ensamble completo del robot
 
 #### 2. simulación URDF ROS 🐢 -
 

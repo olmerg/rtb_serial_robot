@@ -59,37 +59,53 @@ hacer los ensambles necesarios para simular posteriormente los URDF en ROS.
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Listado%20Piezas%20del%20Cuerpo.PNG)
 
-		Listado de piezas del cuerpo del robot
+Listado de piezas del cuerpo del robot
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Listado%20Piezas%20de%20la%20Pinza.PNG)
 
-		Listado de piezas de la pinza del robot
+Listado de piezas de la pinza del robot
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaPiezaCuerpoRobot1.PNG)
 
-		Soporte Base de Servomotores(Hombro)
+Soporte Base de Servomotores(Hombro)
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaPiezaCuerpoRobot2.PNG)
 
-		ServoMotor (MG995)
+ServoMotor (MG995)
 
+Ya con todas con todas las piezas diseñadas, realizamos el ensamblaje del robot  y se modeló. Se realizaron uniones rotacionales
+ para el conjunto de piezas que lo necesitaran.
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaEnsambeCompleto.PNG)
-		Ensamble completo del robot
+
+Ensamble completo del robot
 
 #### 2. simulación URDF ROS 🐢 -
 
-A continuación se usan los ensambles simulados en formato stl para hacer el URDF del robot y la simulación de movimientos e identificar las limitaciones de movimiento
+Con el ensamblaje realizado procedimos a obtener los 6 archivos STL que necesitamos, para posteriormente recrear el robot en ROS
 
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20LINK%20BASE.PNG)
 
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/WhatsApp%20Image%202021-11-04%20at%205.22.31%20PM.jpeg)
+STL Link Cadera
 
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/WhatsApp%20Image%202021-11-04%20at%205.22.05%20PM.jpeg)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20LINK%201.PNG)
 
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/WhatsApp%20Image%202021-11-04%20at%205.23.50%20PM.jpeg)
+STL Link Hombro
 
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/WhatsApp%20Image%202021-11-04%20at%205.20.53%20PM.jpeg)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20LINK%202.PNG)
 
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/WhatsApp%20Image%202021-11-04%20at%205.21.16%20PM.jpeg)
+STL Link Brazos
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20LINK%203.PNG)
+
+STL Link Antebrazo
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20LINK%204.PNG)
+
+STL Link Muñeca
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20LINK%205.PNG)
+
+STL Link Gripper
 
 
 #### 3. Cinematica directa en python 🐍-

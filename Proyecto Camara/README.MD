@@ -65,6 +65,13 @@ Listado de piezas del cuerpo del robot
 
 Listado de piezas de la pinza del robot
 
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaPiezaCuerpoRobot1.PNG)
+
+Soporte Base de Servomotores(Hombro)
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaPiezaCuerpoRobot2.PNG)
+
+ServoMotor (MG995)
 
 #### 2. simulación URDF ROS 🐢 -
 

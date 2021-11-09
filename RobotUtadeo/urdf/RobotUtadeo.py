@@ -12,11 +12,10 @@ class RobotUtadeo(ERobot):
 
         args = super().urdf_to_ets_args(
             "lesson_urdf/urdf/Robot_Utadeo.urdf")
-        
         super().__init__(
             args[0],
             name=args[1])
-
+            
         self.manufacturer = "Utadeo"
         # self.ee_link = self.ets[9]
 

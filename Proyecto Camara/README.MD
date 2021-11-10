@@ -242,7 +242,9 @@ Estos es el plot que generamos
 #### 7. Trayectorias 📈-
 
 ![2222]()
+
 ![2222]()
+
 ![2222]()
 
 #### 8. Aplicación serial arduino-

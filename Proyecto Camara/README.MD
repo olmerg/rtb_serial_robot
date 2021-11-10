@@ -134,7 +134,7 @@ y de esta manera llegar a la posición que queramos, siempre y cuando sea posibl
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20URDF.jpeg)
 
-Otras posiciones que logramos son las siguientes:
+Algunos ejemplos de otras posiciones que logramos son las siguientes:
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/urdf1.PNG)
 

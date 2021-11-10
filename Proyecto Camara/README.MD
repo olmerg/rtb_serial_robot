@@ -219,16 +219,24 @@ cambiar el ángulo de cada una de las uniones.
 
 #### 6. Cinematica inversa en python 🐍--
 
-En Robótica, la Cinemática inversa (IK) es la técnica que permite determinar el movimiento de una cadena de articulaciones para lograr que un actuador final se ubique en una posición concreta. El cálculo de la cinemática inversa es un problema complejo que consiste en la resolución de una serie de ecuaciones cuya solución normalmente no es única.
+En Robótica, la Cinemática inversa (IK) es la técnica que permite determinar el movimiento de una cadena de 
+articulaciones para lograr que un actuador final se ubique en una posición concreta. 
+El cálculo de la cinemática inversa es un problema complejo que consiste en la resolución de una 
+serie de ecuaciones cuya solución normalmente no es única.
 
+Este es el código que usamos
 
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232157.png)
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232229.png)
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232314.png)
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232340.png)
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232454.png)
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232528.png)
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232556.png)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaCodigoCinematicaInversa1.PNG)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaCodigoCinematicaInversa2.PNG)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaCodigoCinematicaInversa3.PNG)
+
+Esto es lo que se imprime en la consola
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaTerminalCinematicaInversa.PNG)
+
+Estos es el plot que generamos
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaPlotCinematicaInversa.PNG)
 
 
 #### 7. Trayectorias 📈-

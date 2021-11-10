@@ -156,7 +156,39 @@ que creamos en Autodesk Inventor.
 
 ![Click Aquí para ver PDF 3](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Plano%20de%20CORTE%203.pdf)
 
-#### 4. Cinematica directa en python 🐍-
+#### 4. Control de peso de los Links físicos
+
+Con los motores y cables brindados por la Universidad, junto a las las piezas que cortamos y con los tornillos,tuercas y la 
+cámara que compramos, empezamos con la construcción o ensamblaje del robot físico
+
+Pero antes de armarlo completamente, armamos cada Link del robot
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Robot%20separado.jpg)
+
+Luego pesamos cada uno de los Links
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Pesaje%20Base.jpg)
+
+Pesaje de la base
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Pesaje%20Brazos.jpg)
+
+Pesaje de los brazos
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Pesaje%20Antebrazos.jpg)
+
+Pesaje de los antebrazos
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Pesaje%20mu%C3%B1eca.jpg)
+
+Pesaje de la muñeca
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Pesaje%20Camara.jpg)
+
+Pesaje del "gripper" o cámara en nuestro caso
+
+
+#### 5. Cinematica directa en python 🐍-
 
 Consiste en determinar cual es la posición y orientación del extremo final del robot, con respecto a un sistema de coordenadas que se toma como referencia, conocidos los valores de las articulaciones y los parámetros geométricos de los elementos del robot
 
@@ -180,7 +212,7 @@ Consiste en determinar cual es la posición y orientación del extremo final del
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001948.png)
 
 
-#### 5. Cinematica inversa en python 🐍--
+#### 6. Cinematica inversa en python 🐍--
 
 En Robótica, la Cinemática inversa (IK) es la técnica que permite determinar el movimiento de una cadena de articulaciones para lograr que un actuador final se ubique en una posición concreta. El cálculo de la cinemática inversa es un problema complejo que consiste en la resolución de una serie de ecuaciones cuya solución normalmente no es única.
 
@@ -194,7 +226,7 @@ En Robótica, la Cinemática inversa (IK) es la técnica que permite determinar 
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232556.png)
 
 
-#### 6. Trayectorias 📈-
+#### 7. Trayectorias 📈-
 
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/trayectorias/Captura%20de%20pantalla%202021-11-06%20233159.png)
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/trayectorias/Captura%20de%20pantalla%202021-11-06%20233332.png)

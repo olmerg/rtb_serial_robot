@@ -251,12 +251,12 @@ Estos es el plot que generamos
 
 Este es el código que usamos en el Arduino
 
-En el Setup declaramos los pines para cada motor, declaramos el delay y la función de escritura
- 
+En el Setup declaramos los pines para cada motor, declaramos el delay y la función de escritura.
+ .
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/SetupArduino.PNG)
 
 En el loop declaramos algunas variables tipo char, para que aumente o disminuya el ángulo del motor que queramos,
-también hicimos las restricciones de los motores y dimos un pequeño delay
+también hicimos las restricciones de los motores y dimos un pequeño delay.
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/loopArduino.PNG)
 

@@ -107,7 +107,7 @@ STL Link Muñeca
 
 STL Link Gripper
 
-Luego cargagos estos archivos STL para recrear nuestro modelo mediante la herramienta RVIZ en ROS, lo que 
+Luego cargamos estos archivos STL para recrear nuestro modelo mediante la herramienta RVIZ en ROS, lo que 
 nos permitió aprender sobre las diversas formas de visualizar un robot y poder manipularlo mediante un 
 nodo publisher, de manera que podamos ver algunos aspectos de la cinemática directa del mismo.
 Fue importante para solucionar el reto, ya que a partir de modelos 3D creados en inventor pudimos evaluar 
@@ -145,7 +145,18 @@ Algunos ejemplos de otras posiciones que logramos son las siguientes:
 Toda esta parte de la programación y visualización en ROS está más detallado en este video
 ## --> https://www.youtube.com/watch?v=fcq3hT-I8CQ
 
-#### 3. Cinematica directa en python 🐍-
+#### 3.Corte láser del robot
+
+Para el corte láser creamos estos 3 archivos PDF tamaño A4, los obtuvimos a partir de los archivos DWG
+que creamos en Autodesk Inventor. 
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Plano%20de%20CORTE%201.pdf)
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Plano%20de%20CORTE%202.pdf)
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Plano%20de%20CORTE%203.pdf)
+
+#### 4. Cinematica directa en python 🐍-
 
 Consiste en determinar cual es la posición y orientación del extremo final del robot, con respecto a un sistema de coordenadas que se toma como referencia, conocidos los valores de las articulaciones y los parámetros geométricos de los elementos del robot
 
@@ -169,7 +180,7 @@ Consiste en determinar cual es la posición y orientación del extremo final del
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001948.png)
 
 
-#### 4. Cinematica inversa en python 🐍--
+#### 5. Cinematica inversa en python 🐍--
 
 En Robótica, la Cinemática inversa (IK) es la técnica que permite determinar el movimiento de una cadena de articulaciones para lograr que un actuador final se ubique en una posición concreta. El cálculo de la cinemática inversa es un problema complejo que consiste en la resolución de una serie de ecuaciones cuya solución normalmente no es única.
 
@@ -183,22 +194,19 @@ En Robótica, la Cinemática inversa (IK) es la técnica que permite determinar 
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232556.png)
 
 
-#### 5. Trayectorias 📈-
+#### 6. Trayectorias 📈-
 
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/trayectorias/Captura%20de%20pantalla%202021-11-06%20233159.png)
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/trayectorias/Captura%20de%20pantalla%202021-11-06%20233332.png)
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/trayectorias/Captura%20de%20pantalla%202021-11-06%20233404.png)
 
-#### 6. Visualización final  🏁 -
-
 #### 7. Aplicación serial arduino-
-
-
 
 ## Autores ✒️
 
 
 _Las siguientes personas colaboraron con el desarrollo del proyecto_
 
-* **Juan Felipe Cañas Bustos** - [JuanCañas](https://github.com/jcscorpion)
-* **Cristian Hernandez Salazar** - [CristianHernandez](https://github.com/cristianchernandezs)
+* **Juan Sebastian Reina** - [JuanSebastianReina](https://github.com/JuanSebastianReina)
+* **Valentina Vega Mahecha** - [vale2012](https://github.com/vale2012)
+* **Cristian Paez** - []()

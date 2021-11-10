@@ -29,7 +29,7 @@ análisis de los laboratorios.
 
 ### Contenido 📑
 
-1. Descripción de la elaboración del modelo
+1. Elaboración del modelo 3D
 
 1. Simulación URDF en ROS
 
@@ -50,7 +50,7 @@ análisis de los laboratorios.
 
 
 
-#### 1. Descripción de la elaboración del modelo-
+#### 1. Elaboración del modelo 3D
 
 Inicialmente elaboramos el modelo de cada una de las piezas,(lista al final de este párrafo),del robot en Autodesk 
 Inventor, manteniendo las dimensiones del robot fisico que pedimos prestado en la universidad, con el fin de poder 
@@ -79,7 +79,7 @@ Ya con todas con todas las piezas diseñadas, realizamos el ensamblaje del robot
 
 Ensamble completo del robot
 
-#### 2. simulación URDF en ROS 
+#### 2. Simulación URDF en ROS 
 
 Con el ensamblaje realizado procedimos a obtener los 6 archivos STL que necesitamos, para posteriormente recrear el robot en ROS
 
@@ -190,7 +190,8 @@ Pesaje del "gripper" o cámara en nuestro caso
 
 #### 5. Cinematica directa en python 🐍-
 
-Consiste en determinar cual es la posición y orientación del extremo final del robot, con respecto a un sistema de coordenadas que se toma como referencia, conocidos los valores de las articulaciones y los parámetros geométricos de los elementos del robot
+Consiste en determinar cual es la posición y orientación del extremo final del robot, con respecto a un sistema de 
+coordenadas que se toma como referencia, conocidos los valores de las articulaciones y los parámetros geométricos de los elementos del robot
 
 1.  inicialmente se importan las librerias que requiere python para ejecutar el codigo satisfactoriamente.
 
@@ -232,9 +233,9 @@ En Robótica, la Cinemática inversa (IK) es la técnica que permite determinar 
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/trayectorias/Captura%20de%20pantalla%202021-11-06%20233332.png)
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/trayectorias/Captura%20de%20pantalla%202021-11-06%20233404.png)
 
-#### 7. Aplicación serial arduino-
+#### 8. Aplicación serial arduino-
 
-## Autores ✒️
+## Autores 👩‍🎓🤵🤵
 
 
 _Las siguientes personas colaboraron con el desarrollo del proyecto_

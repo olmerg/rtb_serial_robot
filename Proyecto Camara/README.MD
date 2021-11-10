@@ -33,6 +33,9 @@ análisis de los laboratorios.
 
 1. Simulación URDF
 
+1. Corte láser del robot
+
+1. Control de peso de los Links físicos
 
 1. Cinematica directa en python
 
@@ -41,9 +44,6 @@ análisis de los laboratorios.
 
 
 1. Trayectorias
-
-
-1. Visualización final
 
 
 1. Aplicación serial arduino

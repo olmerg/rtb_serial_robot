@@ -204,25 +204,18 @@ Robot posicionado en su alcance vertical máximo
 Consiste en determinar cual es la posición y orientación del extremo final del robot, con respecto a un sistema de 
 coordenadas que se toma como referencia, conocidos los valores de las articulaciones y los parámetros geométricos de los elementos del robot
 
-1.  inicialmente se importan las librerias que requiere python para ejecutar el codigo satisfactoriamente.
+Este es el código que usamos
 
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001356.png)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaCodigoCinematicaDirecta.PNG)
 
+Esto es lo que se imprime en la consola
 
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001556.png)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaTerminalCinematicaDirecta.PNG)
 
+Estos son los plot que generamos, el plot de la parte derecha viene con las barras deslizadoras que permiten 
+cambiar el ángulo de cada una de las uniones.
 
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001647.png)
-
-
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001741.png)
-
-
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001831.png)
-
-
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001948.png)
-
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaPlotCinematicaDirecta.PNG)
 
 #### 6. Cinematica inversa en python 🐍--
 

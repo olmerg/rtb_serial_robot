@@ -187,6 +187,17 @@ Pesaje de la muñeca
 
 Pesaje del "gripper" o cámara en nuestro caso
 
+Luego, terminamos de armar nuestro robot, y verificamos su alcance vertical y horizontal con respecto
+al modelo que hicimos en el URDF, estos 2 modelos no variaban en distancias.
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/AlcanceHorizontal.png)
+
+Robot posicionado en su alcance horizontal máximo
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/AlcanceVertical.png)
+
+Robot posicionado en su alcance vertical máximo
+
 
 #### 5. Cinematica directa en python 🐍-
 

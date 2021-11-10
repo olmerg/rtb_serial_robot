@@ -150,11 +150,11 @@ Toda esta parte de la programación y visualización en ROS está más detallado
 Para el corte láser creamos estos 3 archivos PDF tamaño A4, los obtuvimos a partir de los archivos DWG
 que creamos en Autodesk Inventor. 
 
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Plano%20de%20CORTE%201.pdf)
+![Click Aquí para ver PDF 1](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Plano%20de%20CORTE%201.pdf)
 
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Plano%20de%20CORTE%202.pdf)
+![Click Aquí para ver PDF 2](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Plano%20de%20CORTE%202.pdf)
 
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Plano%20de%20CORTE%203.pdf)
+![Click Aquí para ver PDF 3](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Plano%20de%20CORTE%203.pdf)
 
 #### 4. Cinematica directa en python 🐍-
 

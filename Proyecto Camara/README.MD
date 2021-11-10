@@ -31,7 +31,7 @@ análisis de los laboratorios.
 
 1. Descripción de la elaboración del modelo
 
-1. Simulación URDF
+1. Simulación URDF en ROS
 
 1. Corte láser del robot
 
@@ -79,7 +79,7 @@ Ya con todas con todas las piezas diseñadas, realizamos el ensamblaje del robot
 
 Ensamble completo del robot
 
-#### 2. simulación URDF ROS 
+#### 2. simulación URDF en ROS 
 
 Con el ensamblaje realizado procedimos a obtener los 6 archivos STL que necesitamos, para posteriormente recrear el robot en ROS
 
@@ -107,10 +107,43 @@ STL Link Muñeca
 
 STL Link Gripper
 
-Luego pro
-![2222]()
+Luego cargagos estos archivos STL para recrear nuestro modelo mediante la herramienta RVIZ en ROS, lo que 
+nos permitió aprender sobre las diversas formas de visualizar un robot y poder manipularlo mediante un 
+nodo publisher, de manera que podamos ver algunos aspectos de la cinemática directa del mismo.
+Fue importante para solucionar el reto, ya que a partir de modelos 3D creados en inventor pudimos evaluar 
+las posibilidades del robot y ver si efectivamente a la hora de ensamblarlo iba a cumplir con nuestras 
+expectativas, es una forma interesante de conocer un robot sin nisiquiera tener la parte física, el RVIZ 
+nos permitió interactuar con él y ver como funcionan cada una de sus articulaciones y los límites que debemos 
+tener en cuenta a la hora de programar en arduino.
 
-asdasfdac
+Pero para visualizar el robot en RVIZ tuvimos que hacer el siguiente código en el que especifica para cada link,
+su nombre, su origen, su ruta de acceso, el color, su padre, su hijo y el tipo de unión que queriamos.
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20c%C3%B3digo%20URDF%201.PNG)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20c%C3%B3digo%20URDF%202.PNG)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20c%C3%B3digo%20URDF%203.PNG)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20c%C3%B3digo%20URDF%204.PNG)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20c%C3%B3digo%20URDF%205.PNG)
+
+Ya luego de este código y de algunos códigos en la consola, pudimos llegar a esta visualización.
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/urdf0.PNG)
+
+Cuando ejecutamos el código, podemos abrir la siguiente ventana, que nos permite cambiar los grados de cada Join
+y de esta manera llegar a la posición que queramos, siempre y cuando sea posible espacialmente.
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20URDF.jpeg)
+
+Otras posiciones que logramos son las siguientes:
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/urdf1.PNG)
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/urdf4.PNG)
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/urdf6.PNG)
+
+Toda esta parte de la programación y visualización en ROS está más detallado en este video
+## --> https://www.youtube.com/watch?v=fcq3hT-I8CQ
 
 #### 3. Cinematica directa en python 🐍-
 

@@ -7,7 +7,7 @@ This is the example to execute the Robot5DOF robot
 """
 import sys
 #sys.path.append( 'Proyecto Camara') 
-sys.path.append( '../Swift_serial')
+sys.path.append( 'Swift_serial')
 import numpy as np
 import roboticstoolbox as rtb
 from Robot5DOF import Robot5DOF

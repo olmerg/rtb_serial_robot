@@ -159,8 +159,14 @@ En pruebas
     def activar_iman(self):
         comandos='I'
         self.serial.write(comandos.encode())
-    def activar_iman(self):
+    def desactivar_iman(self):
         comandos='i'
+        self.serial.write(comandos.encode()) 
+    def activar_gripper(self):
+        comandos='J'
+        self.serial.write(comandos.encode())
+    def desactivar_gripper(self):
+        comandos='j'
         self.serial.write(comandos.encode())    
     def move_serial(self,q_move):
         '''

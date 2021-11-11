@@ -29,10 +29,13 @@ análisis de los laboratorios.
 
 ### Contenido 📑
 
-1. Descripción de la elaboración del modelo
+1. Elaboración del modelo 3D
 
-1. Simulación URDF
+1. Simulación URDF en ROS
 
+1. Corte láser del robot
+
+1. Control de peso de los Links físicos
 
 1. Cinematica directa en python
 
@@ -43,14 +46,11 @@ análisis de los laboratorios.
 1. Trayectorias
 
 
-1. Visualización final
-
-
 1. Aplicación serial arduino
 
 
 
-#### 1. Descripción de la elaboración del modelo-
+#### 1. Elaboración del modelo 3D
 
 Inicialmente elaboramos el modelo de cada una de las piezas,(lista al final de este párrafo),del robot en Autodesk 
 Inventor, manteniendo las dimensiones del robot fisico que pedimos prestado en la universidad, con el fin de poder 
@@ -79,7 +79,7 @@ Ya con todas con todas las piezas diseñadas, realizamos el ensamblaje del robot
 
 Ensamble completo del robot
 
-#### 2. simulación URDF ROS 
+#### 2. Simulación URDF en ROS 
 
 Con el ensamblaje realizado procedimos a obtener los 6 archivos STL que necesitamos, para posteriormente recrear el robot en ROS
 
@@ -107,65 +107,169 @@ STL Link Muñeca
 
 STL Link Gripper
 
-Luego pro
+Luego cargamos estos archivos STL para recrear nuestro modelo mediante la herramienta RVIZ en ROS, lo que 
+nos permitió aprender sobre las diversas formas de visualizar un robot y poder manipularlo mediante un 
+nodo publisher, de manera que podamos ver algunos aspectos de la cinemática directa del mismo.
+Fue importante para solucionar el reto, ya que a partir de modelos 3D creados en inventor pudimos evaluar 
+las posibilidades del robot y ver si efectivamente a la hora de ensamblarlo iba a cumplir con nuestras 
+expectativas, es una forma interesante de conocer un robot sin nisiquiera tener la parte física, el RVIZ 
+nos permitió interactuar con él y ver como funcionan cada una de sus articulaciones y los límites que debemos 
+tener en cuenta a la hora de programar en arduino.
+
+Pero para visualizar el robot en RVIZ tuvimos que hacer el siguiente código en el que especifica para cada link,
+su nombre, su origen, su ruta de acceso, el color, su padre, su hijo y el tipo de unión que queriamos.
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20c%C3%B3digo%20URDF%201.PNG)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20c%C3%B3digo%20URDF%202.PNG)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20c%C3%B3digo%20URDF%203.PNG)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20c%C3%B3digo%20URDF%204.PNG)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20c%C3%B3digo%20URDF%205.PNG)
+
+Ya luego de este código y de algunos códigos en la consola, pudimos llegar a esta visualización.
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/urdf0.PNG)
+
+Cuando ejecutamos el código, podemos abrir la siguiente ventana, que nos permite cambiar los grados de cada Join
+y de esta manera llegar a la posición que queramos, siempre y cuando sea posible espacialmente.
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20URDF.jpeg)
+
+Algunos ejemplos de otras posiciones que logramos son las siguientes:
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/urdf1.PNG)
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/urdf4.PNG)
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/urdf6.PNG)
+
+Toda esta parte de la programación y visualización en ROS está más detallado en este video
+## --> https://www.youtube.com/watch?v=fcq3hT-I8CQ
+
+#### 3.Corte láser del robot
+
+Para el corte láser creamos estos 3 archivos PDF tamaño A4, los obtuvimos a partir de los archivos DWG
+que creamos en Autodesk Inventor. 
+
+![Click Aquí para ver PDF 1](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Plano%20de%20CORTE%201.pdf)
+
+![Click Aquí para ver PDF 2](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Plano%20de%20CORTE%202.pdf)
+
+![Click Aquí para ver PDF 3](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Plano%20de%20CORTE%203.pdf)
+
+#### 4. Control de peso de los Links físicos
+
+Con los motores y cables brindados por la Universidad, junto a las las piezas que cortamos y con los tornillos,tuercas y la 
+cámara que compramos, empezamos con la construcción o ensamblaje del robot físico
+
+Pero antes de armarlo completamente, armamos cada Link del robot
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Robot%20separado.jpg)
+
+Luego pesamos cada uno de los Links
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Pesaje%20Base.jpg)
+
+Pesaje de la base
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Pesaje%20Brazos.jpg)
+
+Pesaje de los brazos
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Pesaje%20Antebrazos.jpg)
+
+Pesaje de los antebrazos
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Pesaje%20mu%C3%B1eca.jpg)
+
+Pesaje de la muñeca
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Pesaje%20Camara.jpg)
+
+Pesaje del "gripper" o cámara en nuestro caso
+
+Luego, terminamos de armar nuestro robot, y verificamos su alcance vertical y horizontal con respecto
+al modelo que hicimos en el URDF, estos 2 modelos no variaban en distancias.
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/AlcanceHorizontal.png)
+
+Robot posicionado en su alcance horizontal máximo
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/AlcanceVertical.png)
+
+Robot posicionado en su alcance vertical máximo
+
+
+#### 5. Cinematica directa en python 🐍-
+
+Consiste en determinar cual es la posición y orientación del extremo final del robot, con respecto a un sistema de 
+coordenadas que se toma como referencia, conocidos los valores de las articulaciones y los parámetros geométricos de los elementos del robot
+
+Este es el código que usamos
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaCodigoCinematicaDirecta.PNG)
+
+Esto es lo que se imprime en la consola
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaTerminalCinematicaDirecta.PNG)
+
+Estos son los plot que generamos, el plot de la parte derecha viene con las barras deslizadoras que permiten 
+cambiar el ángulo de cada una de las uniones.
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaPlotCinematicaDirecta.PNG)
+
+#### 6. Cinematica inversa en python 🐍--
+
+En Robótica, la Cinemática inversa (IK) es la técnica que permite determinar el movimiento de una cadena de 
+articulaciones para lograr que un actuador final se ubique en una posición concreta. 
+El cálculo de la cinemática inversa es un problema complejo que consiste en la resolución de una 
+serie de ecuaciones cuya solución normalmente no es única.
+
+Este es el código que usamos
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaCodigoCinematicaInversa1.PNG)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaCodigoCinematicaInversa2.PNG)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaCodigoCinematicaInversa3.PNG)
+
+Esto es lo que se imprime en la consola
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaTerminalCinematicaInversa.PNG)
+
+Estos es el plot que generamos
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaPlotCinematicaInversa.PNG)
+
+
+#### 7. Trayectorias 📈-
+
 ![2222]()
 
-asdasfdac
+![2222]()
 
-#### 3. Cinematica directa en python 🐍-
+![2222]()
 
-Consiste en determinar cual es la posición y orientación del extremo final del robot, con respecto a un sistema de coordenadas que se toma como referencia, conocidos los valores de las articulaciones y los parámetros geométricos de los elementos del robot
+#### 8. Aplicación serial arduino
 
-1.  inicialmente se importan las librerias que requiere python para ejecutar el codigo satisfactoriamente.
+Este es el código que usamos en el Arduino
 
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001356.png)
+En el Setup declaramos los pines para cada motor, declaramos el delay y la función de escritura.
+ .
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/SetupArduino.PNG)
 
+En el loop declaramos algunas variables tipo char, para que aumente o disminuya el ángulo del motor que queramos,
+también hicimos las restricciones de los motores y dimos un pequeño delay.
 
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001556.png)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/loopArduino.PNG)
 
+Por último, creamos una clase, llamada home, que cuando se llama, hace que el robot vaya a su posición inicial,
+que en nuestro caso es que haga su extensión vertical máxima.
 
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001647.png)
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/PosicionInicialArduino.PNG)
 
-
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001741.png)
-
-
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001831.png)
-
-
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001948.png)
-
-
-#### 4. Cinematica inversa en python 🐍--
-
-En Robótica, la Cinemática inversa (IK) es la técnica que permite determinar el movimiento de una cadena de articulaciones para lograr que un actuador final se ubique en una posición concreta. El cálculo de la cinemática inversa es un problema complejo que consiste en la resolución de una serie de ecuaciones cuya solución normalmente no es única.
-
-
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232157.png)
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232229.png)
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232314.png)
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232340.png)
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232454.png)
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232528.png)
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232556.png)
-
-
-#### 5. Trayectorias 📈-
-
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/trayectorias/Captura%20de%20pantalla%202021-11-06%20233159.png)
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/trayectorias/Captura%20de%20pantalla%202021-11-06%20233332.png)
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/trayectorias/Captura%20de%20pantalla%202021-11-06%20233404.png)
-
-#### 6. Visualización final  🏁 -
-
-#### 7. Aplicación serial arduino-
-
-
-
-## Autores ✒️
+## Autores 🤵👩‍🎓🤵
 
 
 _Las siguientes personas colaboraron con el desarrollo del proyecto_
 
-* **Juan Felipe Cañas Bustos** - [JuanCañas](https://github.com/jcscorpion)
-* **Cristian Hernandez Salazar** - [CristianHernandez](https://github.com/cristianchernandezs)
+* **Juan Sebastian Reina** - [JuanSebastianReina](https://github.com/JuanSebastianReina)
+* **Valentina Vega Mahecha** - [vale2012](https://github.com/vale2012)
+* **Cristian Paez** - []()

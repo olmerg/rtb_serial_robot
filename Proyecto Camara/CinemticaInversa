@@ -1,0 +1,100 @@
+# To add a new cell, type '# %%'
+# To add a new markdown cell, type '# %% [markdown]'
+# %%
+from roboticstoolbox import DHRobot,RevoluteDH,PrismaticDH
+import roboticstoolbox as rtb
+import  matplotlib.pyplot  as  plt
+import numpy as np
+from math import pi
+
+# %% [markdown]
+# ![robotrrp.png](robotrrp.png)
+# 
+# 
+# $l_1=0.5$, $q_3$ *offset=0.2*
+# 
+
+# %%
+class RobotRRP(DHRobot):
+    def __init__(self):
+        super().__init__(
+            [
+                RevoluteDH(d=0.08,alpha=pi/2,qlim=[-pi,pi]),
+                RevoluteDH(a=0.123,alpha=0,qlim=[-pi,pi]),
+                RevoluteDH(a=0.126,alpha=0,qlim=[-pi,pi]),
+                RevoluteDH(alpha=pi/2,offset=pi/2,qlim=[-pi,pi]),
+                RevoluteDH(d=0.06,alpha=0,qlim=[-pi,pi]),
+                RevoluteDH(d=0.092,alpha=0,qlim=[-pi,pi]),
+            ], name="Robot RRP")
+        self.addconfiguration("qz", np.array([0, 0, 0, 0, 0, 0]))
+        self.addconfiguration("qr", np.array([0, 0, 0, 0, 0, 0]))
+
+    def ik3(self, T,config='l'):
+        """
+        :type T: SE3 Es la posicion deseada en el gripper (https://petercorke.github.io/spatialmath-python/3d_pose_SE3.html)
+        :param config: arm configuration, defaults to "l"
+
+        """
+        l1 = self.links[0].d
+        # de la transaformada homogenea deseada entre el sist. global y la posicion del gripper    
+        Px, Py, Pz = T.t #obtengo los puntos de traslación globales deseados
+        
+        q_ = np.zeros((3,))  
+        q_[0]=np.arctan2(-Py, Px)
+        r = np.sqrt(Px**2 + Py**2)
+        q_[1]=-np.arctan2(r, Pz-l1)
+        q_[2]=np.cos(q_[1])*(Pz-l1)-np.sin(q_[1])*r-self.links[2].offset
+        
+        return q_
+
+  
+
+
+# %%
+my_robot=RobotRRP()
+print(my_robot)
+
+
+# %%
+my_robot.q=my_robot.qz
+my_robot.plot(my_robot.qz,block=False)
+my_robot.fkine_all(my_robot.qz)
+
+
+# %%
+#plt.figure()
+my_robot.q=my_robot.qr
+my_robot.plot(my_robot.qr,block=False)
+my_robot.fkine_all(my_robot.qr)
+
+
+# %%
+T = my_robot.fkine(my_robot.qr)
+print(T)
+
+
+# %%
+sol=my_robot.ik3(T)
+sol
+
+
+# %%
+sol2=my_robot.ikine_LM(T)
+sol2
+
+
+# %%
+my_robot.jacobe(my_robot.qr)
+
+
+# %%
+my_robot.jacob0(my_robot.qr)
+
+
+# %%
+np.linalg.det(my_robot.jacob0(my_robot.qr)[:6][:])
+i=input()
+
+# %%
+
+

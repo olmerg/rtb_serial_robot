@@ -156,6 +156,18 @@ En pruebas
             time.sleep(diff)
 
         self.last_time = time.time()
+    def activar_iman(self):
+        comandos='I'
+        self.serial.write(comandos.encode())
+    def desactivar_iman(self):
+        comandos='i'
+        self.serial.write(comandos.encode()) 
+    def activar_gripper(self):
+        comandos='J'
+        self.serial.write(comandos.encode())
+    def desactivar_gripper(self):
+        comandos='j'
+        self.serial.write(comandos.encode())    
     def move_serial(self,q_move):
         '''
         the protocol is one letter for each degree of movement of robot

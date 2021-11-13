@@ -15,16 +15,20 @@ from math import pi
 
 if __name__ == '__main__':   # pragma nocover
 
+    robot = rtb.models.UR3()
+    #print(robot)
+    #robot.plot(,block=True)
+    
     env = Swift_serial('COM6',115200)
     env.launch(realtime=False)
     
     #posicion inicial (aqui cambiar por el robot realizado)
-    robot = rtb.models.UR3()
+
     # the robot should start in home 
-    
+
     env.add(robot)
     # animar generando una trayectoria
-    qt = rtb.tools.trajectory.jtraj(np.array([0, -pi/2, 0, 0,0, 0]), np.array([pi/2,0, pi/2, pi/2,pi/2, 0]), 20)
+    qt = rtb.tools.trajectory.jtraj(np.array([pi/2, -pi/2, 0, -pi/2,0, 0]), np.array([pi/2,0, 0, pi/2,0, 0]), 20)
     
     for q in qt.q:
          print(q)
@@ -33,4 +37,4 @@ if __name__ == '__main__':   # pragma nocover
     # return to home
     env.reset()
     qt.plot(block=True)
-    
+ 

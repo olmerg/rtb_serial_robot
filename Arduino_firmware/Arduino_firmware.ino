@@ -68,6 +68,8 @@ void loop(){
     else if(comando=='o')angulomano-=10;
     else if(comando=='P')angulodedos=0;
     else if(comando=='p')angulodedos=80;
+    else if(comando=='I'); //TODO: adicionar el codigo para el iman
+    else if(comando=='i'); //TODO: adicionar el codigo para el iman
     else if(comando=='h')home();
     angulorotacion=constrain(angulorotacion,0,180);//restringimos el valor de 0 a 180
     angulocodo=constrain(angulocodo,0,180);//restringimos el valor de 0 a 180
@@ -87,8 +89,11 @@ void loop(){
     else if(comando=='d')angulomuneca-=1;
     else if(comando=='E')angulomano+=1;
     else if(comando=='e')angulomano-=1;
-    else if(comando=='G')angulodedos=0;
-    else if(comando=='g')angulodedos=80;
+    //TODO: adicionar el sexto grado de libertad
+    else if(comando=='J')angulodedos=0;
+    else if(comando=='j')angulodedos=80;
+    else if(comando=='I'); //TODO: adicionar el codigo para el iman
+    else if(comando=='i'); //TODO: adicionar el codigo para el iman
     else if(comando=='h')home();
     angulorotacion=constrain(angulorotacion,0,180);//restringimos el valor de 0 a 180
     angulocodo=constrain(angulocodo,0,180);//restringimos el valor de 0 a 180

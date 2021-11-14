@@ -1,8 +1,8 @@
-# ENTREGA PROYECTO FINAL
+# ENTREGA PROYECTO FINAL :+1:
 
 ### Universidad Jorge Tadeo Lozano 
 ### Robotica Industrial 2021-2s
-### Docente : Olmer Garcia 
+### Docente : Olmer Garcia - @olmerg 
 ## Integrantes :
 > - Sergio N. Rodríguez F.
 > - Andres F. Patiño 

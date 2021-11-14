@@ -1,3 +1,6 @@
-*ENTREGA PROYECTO FINAL*
+# ENTREGA PROYECTO FINAL
 
-En esta entrega 
+## Integrantes
+> - Sergio N. Rodríguez F.
+> - Andres F. Patiño 
+

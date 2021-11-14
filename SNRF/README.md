@@ -14,5 +14,4 @@ Con este proyecto se plantea poder separar los metales de las grandes cantidades
 Para este proyecto, se planteo reutilizar el "RobotUtadeo" desarrollado el semeste pasado por otros compañeros, pero acomodandolo para darle solución a nuestro problema planteado, es decir, que haremos una modificación en su gripper para que de esta manera podamos incluir un electro imán, y este será encargado de realizar el proceso descrito anteriormente. 
 
 *Imagen de referencia del electroiman* 
-
-
+![This is an image](https://www.hwlibre.com/wp-content/uploads/2020/01/electroiman.jpg) 

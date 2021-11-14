@@ -2,7 +2,7 @@
 
 ### Universidad Jorge Tadeo Lozano 
 ### Robotica Industrial 2021-2s
-### Docente : Olmer Garcia - @olmerg 
+### Docente : Olmer Garcia - [@olmerg](https://github.com/olmerg)  
 ## Integrantes :writing_hand:
 > - Sergio N. Rodríguez F.
 > - Andres F. Patiño 

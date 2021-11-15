@@ -11,7 +11,7 @@ Dado la alta demanda que se esta presentando en el campo del reciclaje, pero la 
 ## Solución planteada :bulb:
 Con este proyecto se plantea poder separar los metales de las grandes cantidades de reciclaje que lleguen a un punto de separaciín, separar los materiales de manera manual es muy dificil y a veces peligroso, en las grandes empresas se implementan imanes que logran separar la gran mayoria de metales, nosotros queremos presentar una solucion más economica, un brazo robotico equipado con un electroiman, este brazo no solo separa os metales sino que tambien facilitara su transporte a otro contenedor o banda transportadora para que se le haga su respectivo proceso. 
 ## Diseño del Robot :robot:
-Para este proyecto, se planteo reutilizar el [Robot Utadeo](https://github.com/olmerg/rtb_serial_robot/tree/main/RobotUtadeo/urdf) desarrollado el semeste pasado por otros compañeros, pero acomodandolo para darle solución a nuestro problema planteado, es decir, que haremos una modificación en su gripper para que de esta manera podamos incluir un electro imán, y este será encargado de realizar el proceso descrito anteriormente. 
+Para este proyecto, se planteo reutilizar el [Robot Utadeo](https://github.com/olmerg/rtb_serial_robot/tree/main/RobotUtadeo/urdf) desarrollado el semeste pasado por otros compañeros, pero acomodandolo para darle solución a nuestro problema planteado, es decir, que haremos una modificación en su gripper para que de esta manera podamos incluir un electroimán, y este será encargado de realizar el proceso descrito anteriormente. 
 
 *Imagen de referencia del electroiman* 
 ![This is an image](https://www.hwlibre.com/wp-content/uploads/2020/01/electroiman.jpg) 
@@ -21,3 +21,5 @@ Adicional a esto, deseamos anclarlo a una tabla de madera que le genere un contr
 *Imagen de referencia de la nueva version del robot* 
 
 ***NO OLVIDAR AGREGAR LA IMAGEN***
+## Robot en ROS :compute:
+

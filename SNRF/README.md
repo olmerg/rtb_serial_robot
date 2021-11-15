@@ -21,5 +21,5 @@ Adicional a esto, deseamos anclarlo a una tabla de madera que le genere un contr
 *Imagen de referencia de la nueva version del robot* 
 
 ***NO OLVIDAR AGREGAR LA IMAGEN***
-## Robot en ROS :compute:
+## Robot en ROS :computer:
 

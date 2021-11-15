@@ -15,3 +15,8 @@ Para este proyecto, se planteo reutilizar el [Robot Utadeo](https://github.com/o
 
 *Imagen de referencia del electroiman* 
 ![This is an image](https://www.hwlibre.com/wp-content/uploads/2020/01/electroiman.jpg) 
+
+Adicional a esto, deseamos anclarlo a una tabla de madera que le genere un contra peso, pues al momento de generar algunas trayectorias o levantar algunos elementos, el robot tendia a ladearse o irse de frente. Incluso en el momento que se comenzaron a hacer las pruebas, esto sucedio y genero que el robot se cayera y se quebraran algunas piezas, esto nos llevo a tener que generar nuevos cortes en laser y reemplazar estas piezas 
+
+*Imagen de referencia de la nueva version del robot* 
+***NO OLVIDAR AGREGAR LA IMAGEN***

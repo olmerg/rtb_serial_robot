@@ -16,7 +16,7 @@ from math import pi
 
 if __name__ == '__main__':   # pragma nocover
 
-    env = Swift_serial('COM6',115200)
+    env = Swift_serial('COM4',115200)
     
     
     #posicion inicial (aqui cambiar por el robot realizado)
@@ -27,7 +27,7 @@ if __name__ == '__main__':   # pragma nocover
     env.launch()
     env.add(robot)
 
-    qt = rtb.tools.trajectory.jtraj(np.array([0, 0, 0]), np.array([pi/2, -pi/3, pi/2]), 20)
+    qt = rtb.tools.trajectory.jtraj(np.array([0, 0, 0,0,0]), np.array([0,0,0,0,0]), 20)
     
     for q in qt.q:
          print(q)

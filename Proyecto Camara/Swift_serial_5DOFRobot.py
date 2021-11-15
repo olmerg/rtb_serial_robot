@@ -46,40 +46,5 @@ if __name__ == '__main__':   # pragma nocover
     q5 = rtb.tools.trajectory.jtraj(p5,p6,80)    
     q6 = rtb.tools.trajectory.jtraj(p6,p7,80)
 
-    #robot.plot(np.concatenate((q0.q,q1.q,q2.q,q3.q,q4.q,q5.q,q6.q)), block=False)
+    robot.plot(np.concatenate((q0.q,q1.q,q2.q,q3.q,q4.q,q5.q,q6.q)), block=False)
 
-#for i in [0, 1, 2]:
-    for q in q0.q:
-         #print(q)
-         robot.q=q
-         env.step(0.01)
-    #for q in q1.q:
-         #print(q)
-         #robot.q=q
-         #env.step(0.01)          
-    #for q in q2.q:
-         #print(q)
-         #robot.q=q
-         #env.step(0.01) 
-    #for q in q3.q:
-         #print(q)
-         #robot.q=q
-         #env.step(0.01) 
-    #for q in q4.q:
-         #print(q)
-         #robot.q=q
-         #env.step(0.01) 
-    #for q in q5.q:
-         #print(q)
-         #robot.q=q
-         #env.step(0.01)
-    #for q in q6.q:
-         #print(q)
-         #robot.q=q
-         #env.step(0.01)
-    # return to home
-    env.reset()
-    #env.close()
-    #del env 
-    #del robot
-    #qt.plot(block=True) 

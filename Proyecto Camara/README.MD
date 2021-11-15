@@ -278,11 +278,11 @@ Mediante el comando Swift de python obtenemos una visualización del robot de ma
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Swift.png)
 
+## --> https://youtu.be/YHawVIMIhZU
 
 Podemos ver como el robot físico sigue la misma trayectoria que el robot virtual, ya que enviamos las trayectorias de python hasta el arduino mediante el codigo que cargamos anteriomente de comunicacion serial.
 
 ![2222]()
-
 
 ## Autores 🤵👩‍🎓🤵
 

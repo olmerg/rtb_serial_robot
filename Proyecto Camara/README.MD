@@ -255,15 +255,27 @@ En el Setup declaramos los pines para cada motor, declaramos el delay y la funci
  .
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/SetupArduino.PNG)
 
-En el loop declaramos algunas variables tipo char, para que aumente o disminuya el ángulo del motor que queramos,
-también hicimos las restricciones de los motores y dimos un pequeño delay.
-
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/loopArduino.PNG)
-
-Por último, creamos una clase, llamada home, que cuando se llama, hace que el robot vaya a su posición inicial,
+Creamos una clase, llamada home, que cuando se llama, hace que el robot vaya a su posición inicial,
 que en nuestro caso es que haga su extensión vertical máxima.
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/PosicionInicialArduino.PNG)
+
+En el loop declaramos algunas variables tipo char, para que aumente o disminuya el ángulo del motor que queramos,
+también hicimos las restricciones de los motores y dimos un pequeño delay, todo esto desde el monitor serial de arduino.
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/loopArduino.PNG)
+
+También en el loop declaramos algunas variables tipo char, que cumplen con la misma función anterior, pero estas se utilizan para controlar el robot desde un dispositivo externo conectado mediante bluetooth.
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura.PNG)
+
+Finalemente mediante la aplicacion Bluetooth Electronics de keuwlsoft, disponible en el App Store de Android, desarrllamos una sencilla aplicacion que nos permite controlar el robot desde el telefono mediante diversos botones.
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/WhatsApp%20Image%202021-11-15%20at%2011.52.53.jpeg)
+
+Asi podemos controlar nuestro robot de cualquiera de las dos maneras, sea mediante el monitor serial o el bluetooth. Podemos ver su funcionamiento aqui:
+## --> 
+
 
 ## Autores 🤵👩‍🎓🤵
 

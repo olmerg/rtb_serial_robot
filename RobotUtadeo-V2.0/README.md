@@ -22,5 +22,17 @@ Adicional a esto, deseamos anclarlo a una tabla de madera que le genere un contr
 
 ***NO OLVIDAR AGREGAR LA IMAGEN***
 ## Hadware y Software empleados :video_game: :desktop_computer:
+***Hadware***
+> - Arduino uno (x1)
+> - Arduino sensor shield 5.0 (x1)
+> - Modulo bluettoth para arduino 
+> - Convertidor 120v a 5v (x1)
+> - Servo motor ()
+> - Servo motor (x2)
+#### Software
+> - Visual Studio Code
+> - Arduino
+> - Inventor
+> - Bluetooth electronics
 ## Robot en ROS :computer:
 Para hacer la comunicacion del robot con ROS, se plantea usar el archivo [URDF](https://github.com/olmerg/rtb_serial_robot/tree/main/SNRF/URDF)  (Unified Robot Description Format), pues este a traves de sus frames, joint, y links permite poder simular y visualizar el robot y cu comportamiento.

@@ -38,7 +38,7 @@ if __name__ == '__main__':   # pragma nocover
     p6=np.array([pi/4, 0, -pi/2, -pi/2, -pi/4])
     p7=np.array([0, 0, 0, -pi/2, 0])               
 
-    q0 = rtb.tools.trajectory.jtraj(p0,p1,80)
+    q0 = rtb.tools.trajectory.jtraj(p0,p1,150)
     q1 = rtb.tools.trajectory.jtraj(p1,p2,80)
     q2 = rtb.tools.trajectory.jtraj(p2,p3,80)
     q3 = rtb.tools.trajectory.jtraj(p3,p4,80)
@@ -78,7 +78,7 @@ if __name__ == '__main__':   # pragma nocover
          #robot.q=q
          #env.step(0.01)
     # return to home
-    #env.reset()
+    env.reset()
     #env.close()
     #del env 
     #del robot

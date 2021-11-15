@@ -1,186 +1,81 @@
+# -*- coding: utf-8 -*-
 """
-Created on Wed Feb 17 06:12:26 2021
-please install pySerial
-pip install pyserial
-@author: olmer
+This is the example to execute the RobotUTadeo_V2
+@author olmerg
 """
+import sys  
+sys.path.append('RobotUTadeo_V2')
+
+# ../ se devuelve hasta escontrar la carpeta Swift_serial
+sys.path.append( 'Swift_serial')
 import numpy as np
 import roboticstoolbox as rtb
-import time
-import serial
+from RobotUTadeo_V2 import RobotUTadeo_V2
+from Swift_serial import Swift_serial
 from math import pi
 
-from roboticstoolbox.backends.swift import Swift
+if __name__ == '__main__':   # pragma nocover
 
-class Swift_serial(Swift):  # pragma nocover
-    """
-    Graphical and Hardware backend using Serial_Swift
-    This class connect to arduino through serial port and sent with the next protocol the movement to the motors:     
-     - an alphabet value of th motor(ab,b,c,d,e or g) in lower case to decrement one degree or in upper case to increase one degree
-     - sent h to return to home the robot (applied in the moment to add the robot or to reset the enviroment)
-    **Note** You require to add install pySerial to use this library `pip install pyserial`
-En pruebas
-    Example:
-    .. code-block:: python
-        :linenos:
-        from Swift_serial import Swift_serial
-        env.add(robot)  #this return to home the robot
-        # generate a trajetory
-        qt = rtb.tools.trajectory.jtraj(np.array([0, 0, 0, 0,0, 0]), np.array([pi/2,0, pi/2, pi/2,pi/2, 0]), 20)
-        for q in qt.y:
-            print(q)
-            robot.q=q
-            env.step(0.1)
-        # return to home
-        env.reset()
-    """
-    def __init__(self, port,baudrate, display=True):
-        """
-        
-        Parameters
-        ----------
-        port : TYPE Serial com to communicate with arduino
-            DESCRIPTION.
-        baudrate : TYPE
-            DESCRIPTION.  baudrate 
-        display : TYPE, optional
-            DESCRIPTION. The default is True.
-        Returns
-        -------
-        None.
-        """
-        super(Swift_serial, self).__init__()
-        print('init serial ',port,' speed ',baudrate)
-        self.serial=serial.Serial(timeout=1)
-        self.serial.baudrate = baudrate
-        self.serial.port = port
-        self.serial.open()
-        time.sleep(0.5)
-        self.last_time = time.time()
-        self.q_1=None
-
-    def add(
-            self, ob,  robot_alpha=1.0, collision_alpha=0.0,
-            readonly=False):
-        super().add(ob, robot_alpha=robot_alpha, collision_alpha=collision_alpha,readonly=readonly)
-        #TODO: verify the correct robot
-        self.robots=[]
-        self.robots.append(self.swift_objects[0])
-        self.robots[-1].q=0*self.robots[-1].q
-        self.q_1=self.robots[-1].q
-        self.serial.write(b'h')
-        
+    env = Swift_serial('COM6',115200)
     
-    def reset(self):
-        """
-        Reset the graphical scene and move to home the robot
-        ``env.reset()`` triggers a reset of the 3D scene in the Swift window
-        referenced by ``env``. It is restored to the original state defined by
-        ``launch()``.
-        """
+    #posicion inicial (aqui cambiar por el robot realizado)
+    robot=RobotUTadeo_V2()
+    print(robot)
+    print(robot.to_dict)
+    # the robot should start in home 
+    env.launch()
+    env.add(robot)
+    
+    p0=np.array([0, 0, 0, 0, 0])  
+    p1=np.array([pi/2, 0, 0, 0, 0])
+    p2=np.array([pi/2, pi/2, pi/2,-pi/2, 0])
+    p3=np.array([pi/2, pi/2, -(5*pi/36), pi/12, 0])
+    p4=np.array([pi/2, 0, pi/4, (2*pi/9), 0])
+    p5=np.array([-pi/2, 0, pi/4, (2*pi/9), 0])
+    p6=np.array([-pi/2, pi/2, -pi/4, (2*pi/9), 0])
+    p7=np.array([-pi/2, pi/2, -pi/4, (2*pi/9), pi/2])               
 
-        super().reset
-        self.robots[-1].q=0*self.robots[-1].q
-        self.q_1=self.robots[-1].q
-        self.serial.write(b'h')
-        self.step(0.01)
-
-    def step(self, dt=0.05):
-        """
-        
-        Parameters
-        ----------
-        dt : TYPE, optional
-            DESCRIPTION. The default is 0.05.
-        Returns
-        -------
-        None.
-        """
-        super().step(0.01)
-        for robot_object in self.robots:
-            robot = robot_object
-
-            if self.swift_options[0]["readonly"] or robot.control_type == 'p':
-                pass            # pragma: no cover
-
-            elif robot.control_type == 'v':
-                # this is made in swift class
-                # for i in range(robot.n):
-                #     q_1=self.q_1[i]
-                #     robot.q[i] += robot.qd[i] * (dt)
-
-                #     if np.any(robot.qlim[:, i] != 0) and \
-                #             not np.any(np.isnan(robot.qlim[:, i])):
-                #         robot.q[i] = np.min([robot.q[i], robot.qlim[1, i]])
-                #         robot.q[i] = np.max([robot.q[i], robot.qlim[0, i]])
-                move=np.round((robot.q-self.q_1)*180.0/pi)
-                print(move)
-                if(np.sum(np.abs(move))>0):
-                        self.move_serial(move)
-                line=self.serial.readline().decode("utf-8")
-                if len(line)>0:
-                    if line[0]=='*' and line[-3]=='*':
-                        print(line[1:-3].split(','))
-                #TODO: what to do if the motor did not come to the expected value?
-                self.q_1=robot.q
-                
-
-            elif robot.control_type == 'a':
-                pass
-
-            else:            # pragma: no cover
-                # Should be impossible to reach
-                raise ValueError(
-                    'Invalid robot.control_type. '
-                    'Must be one of \'p\', \'v\', or \'a\'')
-        
-        #just wait if take small time
-        time_taken = (time.time() - self.last_time)
-        diff = dt - time_taken
-
-        if diff > 0:
-            time.sleep(diff)
-
-        self.last_time = time.time()
-    def activar_iman(self):
-        comandos='I'
-        self.serial.write(comandos.encode())
-    def desactivar_iman(self):
-        comandos='i'
-        self.serial.write(comandos.encode()) 
-    def activar_gripper(self):
-        comandos='J'
-        self.serial.write(comandos.encode())
-    def desactivar_gripper(self):
-        comandos='j'
-        self.serial.write(comandos.encode())    
-    def move_serial(self,q_move):
-        '''
-        the protocol is one letter for each degree of movement of robot
-        example first motor use a(-1) or A(+1)
-        
-         chr(ord(a)+1)
-        '''
-        comandos=''
-        for move,i in zip(q_move,range(0, len(q_move))):
-            command=65
-            if move>0:
-                for j in range(0,int(move)):
-                    #self.serial.write(char(command+i))
-                    comandos+=chr(command+i)
-            elif move<0:
-                for j in range(int(move),0):
-                    #self.serial.write(b'S')
-                    comandos+=chr(command+i+32)
-        self.serial.write(comandos.encode())
-        # if True:
-        #     command=65+i #A is the motor zero+ and a is motor zero-
-        #     if move>0:
-        #         for j in range(0,move):
-        #             self.serial.write(chr(command).encode())
-        #             #print(chr(command+i))
-        #             time.sleep(0.001)
-        #     elif move<0:
-        #         for j in range(move,0):
-        #             self.serial.write(chr(command+32).encode())
-        #             time.sleep(0.001)
+    q0 = rtb.tools.trajectory.jtraj(p0,p1,90)
+    q1 = rtb.tools.trajectory.jtraj(p1,p2,90)
+    q2 = rtb.tools.trajectory.jtraj(p2,p3,90)
+    q3 = rtb.tools.trajectory.jtraj(p3,p4,90)
+    q4 = rtb.tools.trajectory.jtraj(p4,p5,90)
+    q5 = rtb.tools.trajectory.jtraj(p5,p6,90)    
+    q6 = rtb.tools.trajectory.jtraj(p6,p7,90)        
+    
+    #env.reset()
+for i in [0, 1, 2]:
+    for q in q0.y:
+         #print(q)
+         robot.q=q
+         env.step(0.01)
+    for q in q1.y:
+         #print(q)
+         robot.q=q
+         env.step(0.01)          
+    for q in q2.y:
+         #print(q)
+         robot.q=q
+         env.step(0.01) 
+    for q in q3.y:
+         #print(q)
+         robot.q=q
+         env.step(0.01) 
+    for q in q4.y:
+         #print(q)
+         robot.q=q
+         env.step(0.01) 
+    for q in q5.y:
+         #print(q)
+         robot.q=q
+         env.step(0.01)
+    for q in q6.y:
+         #print(q)
+         robot.q=q
+         env.step(0.01)
+    # return to home
+    env.reset()
+    #env.close()
+    #del env 
+    #del robot
+    #qt.plot(block=True) 

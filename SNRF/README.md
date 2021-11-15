@@ -1,1 +1,17 @@
-Ejemplo GitHub 
+# ENTREGA PROYECTO FINAL :trophy:
+
+### Universidad Jorge Tadeo Lozano 
+### Robotica Industrial 2021-2s
+### Docente : Olmer Garcia - [@olmerg](https://github.com/olmerg)  
+## Integrantes :writing_hand:
+> - Sergio N. Rodríguez F.
+> - Andres F. Patiño 
+## Identificación del problema :mag_right:
+Dado la alta demanda que se esta presentando en el campo del reciclaje, pero la mala 
+## Solución planteada :bulb:
+Con este proyecto se plantea poder separar los metales de las grandes cantidades de reciclaje que lleguen a un punto 
+## Diseño del Robot :robot:
+Para este proyecto, se planteo reutilizar el [Robot Utadeo](https://github.com/olmerg/rtb_serial_robot/tree/main/RobotUtadeo/urdf) desarrollado el semeste pasado por otros compañeros, pero acomodandolo para darle solución a nuestro problema planteado, es decir, que haremos una modificación en su gripper para que de esta manera podamos incluir un electro imán, y este será encargado de realizar el proceso descrito anteriormente. 
+
+*Imagen de referencia del electroiman* 
+![This is an image](https://www.hwlibre.com/wp-content/uploads/2020/01/electroiman.jpg) 

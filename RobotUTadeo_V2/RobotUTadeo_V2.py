@@ -5,13 +5,13 @@ from math import pi
 
 class RobotUTadeo_V2(ERobot):
     """
-    Class that imports a RobotUtadeo 
+    Class that imports a RobotUTadeo_V2
     """
 
     def __init__(self):
 
         args = super().urdf_to_ets_args(
-            "lesson_urdf/urdf/Robot_Utadeo.urdf")
+            "RobotUtadeo-V2.0/URDF/URDF-RobotUTadeo-V2.urdf")
         super().__init__(
             args[0],
             name=args[1])

@@ -7,9 +7,9 @@
 > - Sergio N. Rodríguez F.
 > - Andres F. Patiño 
 ## Identificación del problema :mag_right:
-Dado la alta demanda que se esta presentando en el campo del reciclaje, pero la mala 
+Dado la alta demanda que se esta presentando en el campo del reciclaje, pero la falta de eficacia al momento de separar algunos metales de otros materiales se crea un problema ya que todos estos materiales tienen procesos diferentes al momento de reciclarlos. Cuando los materiales se mezclan en estos procesos puede que dañen algunas maquinas implicadas o lastimen a alguien, es primordial separar has te mas pequeño pedazo, hacerlo de manera manual puede resultar peligroso y el esquipo especializado puede ser muy costoso.
 ## Solución planteada :bulb:
-Con este proyecto se plantea poder separar los metales de las grandes cantidades de reciclaje que lleguen a un punto 
+Con este proyecto se plantea poder separar los metales de las grandes cantidades de reciclaje que lleguen a un punto de separaciín, separar los materiales de manera manual es muy dificil y a veces peligroso, en las grandes empresas se implementan imanes que logran separar la gran mayoria de metales, nosotros queremos presentar una solucion más economica, un brazo robotico equipado con un electroiman, este brazo no solo separa os metales sino que tambien facilitara su transporte a otro contenedor o banda transportadora para que se le haga su respectivo proceso. 
 ## Diseño del Robot :robot:
 Para este proyecto, se planteo reutilizar el [Robot Utadeo](https://github.com/olmerg/rtb_serial_robot/tree/main/RobotUtadeo/urdf) desarrollado el semeste pasado por otros compañeros, pero acomodandolo para darle solución a nuestro problema planteado, es decir, que haremos una modificación en su gripper para que de esta manera podamos incluir un electro imán, y este será encargado de realizar el proceso descrito anteriormente. 
 

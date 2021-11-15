@@ -108,19 +108,21 @@ void loop(){
   Muneca.write(anguloMuneca);
   Camara.write(anguloCamara);
 
+if(i==20){
+  i=0;
   Serial.print("*");
-  Serial.print(anguloCadera);
+  Serial.print(anguloCadera-90);
   Serial.print(',');
-  Serial.print(anguloHombroD);
+  Serial.print(anguloHombroD-81);
   Serial.print(',');
-  //Serial.print(anguloHombroI);
-  //Serial.print(',');
-  Serial.print(anguloCodo);
+  Serial.print(anguloCodo-110);
   Serial.print(',');
-  Serial.print(anguloMuneca);
+  Serial.print(anguloMuneca-100);
   Serial.print(',');
-  Serial.print(anguloCamara);
+  Serial.print(anguloCamara-81);
   Serial.println('*');
+  }
+else{i++;}
 
   delay(5);
 }//End loop

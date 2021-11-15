@@ -22,4 +22,4 @@ Adicional a esto, deseamos anclarlo a una tabla de madera que le genere un contr
 
 ***NO OLVIDAR AGREGAR LA IMAGEN***
 ## Robot en ROS :computer:
-Para hacer la comunicacion del robot con ROS, se plantea usar el archivo [URDF](https://github.com/olmerg/rtb_serial_robot/tree/main/SNRF/URDF)  (Unified Robot Description Format), pues este a traves de sus frames, joint, y links permite darle manipulación y comunicación al robot. 
+Para hacer la comunicacion del robot con ROS, se plantea usar el archivo [URDF](https://github.com/olmerg/rtb_serial_robot/tree/main/SNRF/URDF)  (Unified Robot Description Format), pues este a traves de sus frames, joint, y links permite poder simular y visualizar el robot y cu comportamiento.

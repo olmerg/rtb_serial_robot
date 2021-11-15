@@ -238,16 +238,7 @@ Estos es el plot que generamos
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaPlotCinematicaInversa.PNG)
 
-
-#### 7. Trayectorias 📈-
-
-![2222]()
-
-![2222]()
-
-![2222]()
-
-#### 8. Aplicación serial arduino
+#### 7. Aplicación serial arduino
 
 Este es el código que usamos en el Arduino
 
@@ -275,6 +266,23 @@ Finalemente mediante la aplicacion Bluetooth Electronics de keuwlsoft, disponibl
 
 Asi podemos controlar nuestro robot de cualquiera de las dos maneras, sea mediante el monitor serial o el bluetooth. Podemos ver su funcionamiento aqui:
 ## --> https://youtu.be/pAqLarWzQy8
+
+
+#### 8. Trayectorias 📈-
+
+Mediante el codigo en python planeamos diversas trayectorias que graban diferentes movimientos mediante la cámara ubicada en el gripper, puede ser una escena de acción como en las peliculas o tomas desde diversos angulos.
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/trayectoriasPython.PNG)
+
+Mediante el comando Swift de python obtenemos una visualización del robot de manera virtual, basandonos en el URDF del mismo, aqui vemos las trayectorias que sigue el robot físico.
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Swift.png)
+
+
+Podemos ver como el robot físico sigue la misma trayectoria que el robot virtual, ya que enviamos las trayectorias de python hasta el arduino mediante el codigo que cargamos anteriomente de comunicacion serial.
+
+![2222]()
+
 
 ## Autores 🤵👩‍🎓🤵
 

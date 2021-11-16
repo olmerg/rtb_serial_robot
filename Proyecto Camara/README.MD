@@ -260,7 +260,7 @@ También en el loop declaramos algunas variables tipo char, que cumplen con la m
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura.PNG)
 
-Finalemente mediante la aplicacion Bluetooth Electronics de keuwlsoft, disponible en el App Store de Android, desarrllamos una sencilla aplicacion que nos permite controlar el robot desde el telefono mediante diversos botones.
+Finalemente mediante la aplicacion Bluetooth Electronics de keuwlsoft, disponible en el App Store de Android, desarrollamos una sencilla aplicacion que nos permite controlar el robot desde el telefono mediante diversos botones.
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/WhatsApp%20Image%202021-11-15%20at%2011.52.53.jpeg)
 

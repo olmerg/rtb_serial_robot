@@ -5,7 +5,7 @@
 ### Docente : Olmer Garcia - [@olmerg](https://github.com/olmerg)  
 ## Integrantes :writing_hand:
 > - Sergio N. Rodríguez F.
-> - Andres F. Patiño 
+> - Andres F. Patiño M.
 ## Identificación del problema :mag_right:
 Dado la alta demanda que se esta presentando en el campo del reciclaje, pero la falta de eficacia al momento de separar algunos metales de otros materiales se crea un problema ya que todos estos materiales tienen procesos diferentes al momento de reciclarlos. Cuando los materiales se mezclan en estos procesos puede que dañen algunas maquinas implicadas o lastimen a alguien, es primordial separar has te mas pequeño pedazo, hacerlo de manera manual puede resultar peligroso y el esquipo especializado puede ser muy costoso.
 ## Solución planteada :bulb:
@@ -25,10 +25,10 @@ Adicional a esto, deseamos anclarlo a una tabla de madera que le genere un contr
 ***Hadware***
 > - Arduino uno (x1)
 > - Arduino sensor shield 5.0 (x1)
-> - Modulo bluetooth para arduino 
+> - Modulo bluetooth para arduino (x1)
 > - Convertidor 120v a 5v (x1)
-> - Servo motor (x4)
-> - Servo motor (x2)
+> - Servo motor MG995 (x4)
+> - Servo motor SG90 (x2)
 
 ***Software***
 > - Visual Studio Code
@@ -45,4 +45,7 @@ Teniendo en cuenta el codigo realizado en arduino y las letras que se van a empl
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4afb454277e984d69e93cb750831d621d27ca72c/RobotUTadeo_V2/Imagenes/InterfazBluetooth.jpg )
 
 Con estas flechas y botones, podremos manipular el brazo e inlcuso si queremos que este regrese a su posición inicial, podemos presionar el boton azul que dice "HOME" y el debería volver a dicha posición.
+## Modelado y visualización 
+Luego de haber ensamblado todas las piezas, podremos ver nuestro brazo con diferentes grados de libertad :
+
 ## Planteamiento de las trayectorias :chart_with_upwards_trend:

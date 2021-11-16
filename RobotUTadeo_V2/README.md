@@ -45,7 +45,11 @@ Teniendo en cuenta el codigo realizado en arduino y las letras que se van a empl
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4afb454277e984d69e93cb750831d621d27ca72c/RobotUTadeo_V2/Imagenes/InterfazBluetooth.jpg )
 
 Con estas flechas y botones, podremos manipular el brazo e inlcuso si queremos que este regrese a su posición inicial, podemos presionar el boton azul que dice "HOME" y el debería volver a dicha posición.
-## Modelado y visualización 
+## Modelado y visualización :eyes:
 Luego de haber ensamblado todas las piezas, podremos ver nuestro brazo con diferentes grados de libertad :
-
+![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/d3cee1eb60260a47448045f965aace5d251b18c5/RobotUTadeo_V2/Imagenes/IMG-20211114-WA0035.jpg) 
+![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/d3cee1eb60260a47448045f965aace5d251b18c5/RobotUTadeo_V2/Imagenes/IMG-20211114-WA0036.jpg)
+![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/d3cee1eb60260a47448045f965aace5d251b18c5/RobotUTadeo_V2/Imagenes/IMG-20211114-WA0037.jpg)
+![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/d3cee1eb60260a47448045f965aace5d251b18c5/RobotUTadeo_V2/Imagenes/IMG-20211114-WA0038.jpg)
+![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/d3cee1eb60260a47448045f965aace5d251b18c5/RobotUTadeo_V2/Imagenes/IMG-20211114-WA0039.jpg)
 ## Planteamiento de las trayectorias :chart_with_upwards_trend:

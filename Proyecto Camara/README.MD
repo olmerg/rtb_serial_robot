@@ -289,7 +289,7 @@ Podemos ver como el robot físico sigue la misma trayectoria que el robot virtua
 Con el fin de convertir este proyecto en algo más allá de la investigación, hemos desarrollado un concepto de marca alrededor de él y todo lo contenido en este documento, por eso desarrollamos un video pitch que contiene toda la información relevante del proyecto y que lo hace atractivo al público.
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo.png)
-## --> 
+## --> https://youtu.be/KYo8mj_5Os8
 
 ## Autores 🤵👩‍🎓🤵
 

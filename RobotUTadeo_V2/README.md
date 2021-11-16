@@ -37,4 +37,6 @@ Adicional a esto, deseamos anclarlo a una tabla de madera que le genere un contr
 > - Bluetooth electronics
 ## Robot en ROS :computer:
 Para hacer la comunicacion del robot con ROS, se plantea usar el archivo [URDF](https://github.com/olmerg/rtb_serial_robot/tree/main/SNRF/URDF)  (Unified Robot Description Format), pues este a traves de sus frames, joint, y links permite poder simular y visualizar el robot y cu comportamiento.
-## 
+## Comando por Bluetooth :iphone:
+Para hacer los comando desde Bluetooth, nos ayudamos de una aplicación llamada Bluetooth electronics, con ella podremos crear el diseño que nosotros dispongamos, incluyendo los datos que van a enviar desde ella hacía el arduino, y de esta forma poder controlar nuestro brazo. 
+Teniendo en cuenta el codigo realizado en arduino y las letras que se van a emplear para enviar los comandos, procedemos a diseñar la interfaz la cual visualizamos de la siguiente manera:

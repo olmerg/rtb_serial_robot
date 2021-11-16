@@ -44,3 +44,4 @@ Teniendo en cuenta el codigo realizado en arduino y las letras que se van a empl
 *Interfaz en Bluetooth Electronics* 
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4afb454277e984d69e93cb750831d621d27ca72c/RobotUTadeo_V2/Imagenes/InterfazBluetooth.jpg )
 
+Con estas flechas y botones, podremos manipular el brazo e inlcuso si queremos que este regrese a su posición inicial, podemos presionar el boton azul que dice "HOME" y el debería vovler a dicha posición.

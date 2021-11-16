@@ -295,6 +295,6 @@ Con el fin de convertir este proyecto en algo más allá de la investigación, h
 
 _Las siguientes personas colaboraron con el desarrollo del proyecto_
 
-* **Juan Sebastian Reina** - [JuanSebastianReina](https://github.com/JuanSebastianReina)// juanS.reinaa@utadeo.com
-* **Valentina Vega Mahecha** - [vale2012](https://github.com/vale2012)// valentina.vegam@utadeo.com
-* **Cristian Paez** - []()// cristian.paezb@utadeo.edu.co 
+* **Juan Sebastian Reina** - [JuanSebastianReina](https://github.com/JuanSebastianReina)// juanS.reinaa@utadeo.edu.co
+* **Valentina Vega Mahecha** - [vale2012](https://github.com/vale2012)// valentina.vegam@utadeo.edu.co
+* **Cristian Paez** - []()// cristian.paez@utadeo.edu.co

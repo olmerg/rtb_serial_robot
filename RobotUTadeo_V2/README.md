@@ -29,6 +29,7 @@ Adicional a esto, deseamos anclarlo a una tabla de madera que le genere un contr
 > - Convertidor 120v a 5v (x1)
 > - Servo motor (x4)
 > - Servo motor (x2)
+
 ***Software***
 > - Visual Studio Code
 > - Arduino

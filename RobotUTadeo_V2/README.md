@@ -5,7 +5,7 @@
 ### Docente : Olmer Garcia - [@olmerg](https://github.com/olmerg)  
 ## Integrantes :writing_hand:
 > - Sergio N. Rodríguez F.
-> - Andres F. Patiño 
+> - Andres F. Patiño M.
 ## Identificación del problema :mag_right:
 Dado la alta demanda que se esta presentando en el campo del reciclaje, pero la falta de eficacia al momento de separar algunos metales de otros materiales se crea un problema ya que todos estos materiales tienen procesos diferentes al momento de reciclarlos. Cuando los materiales se mezclan en estos procesos puede que dañen algunas maquinas implicadas o lastimen a alguien, es primordial separar has te mas pequeño pedazo, hacerlo de manera manual puede resultar peligroso y el esquipo especializado puede ser muy costoso.
 ## Solución planteada :bulb:
@@ -25,10 +25,11 @@ Adicional a esto, deseamos anclarlo a una tabla de madera que le genere un contr
 ***Hadware***
 > - Arduino uno (x1)
 > - Arduino sensor shield 5.0 (x1)
-> - Modulo bluetooth para arduino 
+> - Modulo bluetooth para arduino (x1)
 > - Convertidor 120v a 5v (x1)
-> - Servo motor (x4)
-> - Servo motor (x2)
+> - Servo motor MG995 (x4)
+> - Servo motor SG90 (x2)
+
 ***Software***
 > - Visual Studio Code
 > - Arduino
@@ -36,4 +37,19 @@ Adicional a esto, deseamos anclarlo a una tabla de madera que le genere un contr
 > - Bluetooth electronics
 ## Robot en ROS :computer:
 Para hacer la comunicacion del robot con ROS, se plantea usar el archivo [URDF](https://github.com/olmerg/rtb_serial_robot/tree/main/SNRF/URDF)  (Unified Robot Description Format), pues este a traves de sus frames, joint, y links permite poder simular y visualizar el robot y cu comportamiento.
-## 
+## Comando por Bluetooth :iphone:
+Para hacer los comando desde Bluetooth, nos ayudamos de una aplicación llamada Bluetooth electronics, con ella podremos crear el diseño que nosotros dispongamos, incluyendo los datos que van a enviar desde ella hacía el arduino, y de esta forma poder controlar nuestro brazo. 
+Teniendo en cuenta el codigo realizado en arduino y las letras que se van a emplear para enviar los comandos, procedemos a diseñar la interfaz la cual visualizamos de la siguiente manera:
+
+*Interfaz en Bluetooth Electronics* 
+![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4afb454277e984d69e93cb750831d621d27ca72c/RobotUTadeo_V2/Imagenes/InterfazBluetooth.jpg )
+
+Con estas flechas y botones, podremos manipular el brazo e inlcuso si queremos que este regrese a su posición inicial, podemos presionar el boton azul que dice "HOME" y el debería volver a dicha posición.
+## Modelado y visualización :eyes:
+Luego de haber modelado y ensamblado todas las piezas, podremos ver nuestro brazo con diferentes grados de libertad :
+![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/d3cee1eb60260a47448045f965aace5d251b18c5/RobotUTadeo_V2/Imagenes/IMG-20211114-WA0035.jpg) 
+![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/d3cee1eb60260a47448045f965aace5d251b18c5/RobotUTadeo_V2/Imagenes/IMG-20211114-WA0036.jpg)
+![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/d3cee1eb60260a47448045f965aace5d251b18c5/RobotUTadeo_V2/Imagenes/IMG-20211114-WA0037.jpg)
+![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/d3cee1eb60260a47448045f965aace5d251b18c5/RobotUTadeo_V2/Imagenes/IMG-20211114-WA0038.jpg)
+![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/d3cee1eb60260a47448045f965aace5d251b18c5/RobotUTadeo_V2/Imagenes/IMG-20211114-WA0039.jpg)
+## Planteamiento de las trayectorias :chart_with_upwards_trend:

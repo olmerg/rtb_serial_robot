@@ -282,10 +282,16 @@ Mediante el comando Swift de python obtenemos una visualización del robot de ma
 
 Podemos ver como el robot físico sigue la misma trayectoria que el robot virtual, ya que enviamos las trayectorias de python hasta el arduino mediante el codigo que cargamos anteriomente de comunicacion serial.
 
-![2222]()
+## --> https://youtu.be/jNTdWokAjWE
+
+#### 9. Video Promocional 📷-
+
+Con el fin de convertir este proyecto en algo más allá de la investigación, hemos desarrollado un concepto de marca alrededor de él y todo lo contenido en este documento, por eso desarrollamos un video pitch que contiene toda la información relevante del proyecto y que lo hace atractivo al público.
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo.png)
+## --> 
 
 ## Autores 🤵👩‍🎓🤵
-
 
 _Las siguientes personas colaboraron con el desarrollo del proyecto_
 

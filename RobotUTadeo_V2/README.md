@@ -46,7 +46,7 @@ Teniendo en cuenta el codigo realizado en arduino y las letras que se van a empl
 *Interfaz en Bluetooth Electronics* 
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4afb454277e984d69e93cb750831d621d27ca72c/RobotUTadeo_V2/Imagenes/InterfazBluetooth.jpg )
 
-Con estas flechas y botones, podremos manipular el brazo e inlcuso si queremos que este regrese a su posición inicial, podemos presionar el boton azul que dice "HOME" y el debería volver a dicha posición.
+Con estas flechas y botones, podremos manipular el brazo e inlcuso si queremos que este regrese a su posición inicial, podemos presionar el boton azul que dice "HOME" y el debería volver a dicha posición. El codigo utilizado para este proyecto se podrá encontrar [AQUÍ](https://github.com/olmerg/rtb_serial_robot/blob/d37b6842aa998b607cc1221b3aeb89b6a9b29748/RobotUTadeo_V2/CodigoArduino/CodigoArduino.ino)  
 ## Modelado y visualización :eyes:
 Luego de haber modelado y ensamblado todas las piezas, podremos ver nuestro brazo con diferentes grados de libertad :
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/d3cee1eb60260a47448045f965aace5d251b18c5/RobotUTadeo_V2/Imagenes/IMG-20211114-WA0035.jpg) 
@@ -56,6 +56,7 @@ Luego de haber modelado y ensamblado todas las piezas, podremos ver nuestro braz
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/d3cee1eb60260a47448045f965aace5d251b18c5/RobotUTadeo_V2/Imagenes/IMG-20211114-WA0039.jpg)
 ## Planteamiento de las trayectorias :chart_with_upwards_trend:
 Para estas trayectorias vamos a implementar los pasos usados en el parcial de segundo corte, de tal forma que trabajariamos con el siguiente codigo: 
+
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod1.png)
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod2.png)
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod3.png)

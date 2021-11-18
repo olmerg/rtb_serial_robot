@@ -39,12 +39,13 @@ Adicional a esto, deseamos anclarlo a una tabla de madera que le genere un contr
 > - Bluetooth electronics
 ## Robot en ROS :computer:
 Para hacer la comunicacion del robot con ROS, se plantea usar el archivo [URDF](https://github.com/olmerg/rtb_serial_robot/tree/main/SNRF/URDF)  (Unified Robot Description Format), pues este a traves de sus frames, joint, y links permite poder simular y visualizar el robot y cu comportamiento.
+
 ## Comando por Bluetooth :iphone:
 Para hacer los comando desde Bluetooth, nos ayudamos de una aplicación llamada Bluetooth electronics, con ella podremos crear el diseño que nosotros dispongamos, incluyendo los datos que van a enviar desde ella hacía el arduino, y de esta forma poder controlar nuestro brazo. 
 Teniendo en cuenta el codigo realizado en arduino y las letras que se van a emplear para enviar los comandos, procedemos a diseñar la interfaz la cual visualizamos de la siguiente manera:
 
 *Interfaz en Bluetooth Electronics* 
-![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4afb454277e984d69e93cb750831d621d27ca72c/RobotUTadeo_V2/Imagenes/InterfazBluetooth.jpg )
+![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4afb454277e984d69e93cb750831d621d27ca72c/RobotUTadeo_V2/Imagenes/InterfazBluetooth.jpg)
 
 Con estas flechas y botones, podremos manipular el brazo e inlcuso si queremos que este regrese a su posición inicial, podemos presionar el boton azul que dice "HOME" y el debería volver a dicha posición. El codigo utilizado para este proyecto se podrá encontrar [AQUÍ](https://github.com/olmerg/rtb_serial_robot/blob/d37b6842aa998b607cc1221b3aeb89b6a9b29748/RobotUTadeo_V2/CodigoArduino/CodigoArduino.ino)  
 ## Modelado y visualización :eyes:
@@ -66,3 +67,10 @@ Para estas trayectorias vamos a implementar los pasos usados en el parcial de se
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod7.png)
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod8.png)
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod9.png)
+
+## Conclusiones 
+Pudimos evidenciar que la implementación del electroiman, es una buena solución para el problema planteado, más sin embargo se podría mejorar la optimización de este proceso al implementar un transistor que le suba la corriente al electroiman, de esta forma obtendría más corriente para generar un campo magnetico mayor y atraer los elementos con más definición.
+
+Al ponerle una base, evita que el brazo se incline o se vaya hacia adelante al momento de estar haciendo las trayectorias o algun movimiento, pues como se menciono en el cuerpo de este trabajo, era un problema que poseia este robot por el peso que tiene del codo hacia el electroiman. 
+
+Se pudieron aplicar los conocimientos adquiridos a lo largo del semestre en la asigntura de Robotica industrial, haciendo la implementacion de diferentes librerias y del hadware y software arduino para poder manipular controladamente este brazo. 

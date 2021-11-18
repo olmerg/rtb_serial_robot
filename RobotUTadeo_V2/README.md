@@ -53,3 +53,4 @@ Luego de haber modelado y ensamblado todas las piezas, podremos ver nuestro braz
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/d3cee1eb60260a47448045f965aace5d251b18c5/RobotUTadeo_V2/Imagenes/IMG-20211114-WA0038.jpg)
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/d3cee1eb60260a47448045f965aace5d251b18c5/RobotUTadeo_V2/Imagenes/IMG-20211114-WA0039.jpg)
 ## Planteamiento de las trayectorias :chart_with_upwards_trend:
+Para estas trayectorias vamos a implementar los pasos usados en el parcial de segundo corte, de tal forma que trabajariamos con el siguiente codigo: 

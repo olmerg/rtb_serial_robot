@@ -269,7 +269,8 @@ void setup(){
 Creamos una clase, llamada home, que cuando se llama, hace que el robot vaya a su posición inicial,
 que en nuestro caso es que haga su extensión vertical máxima.
 
-```void home(){
+```
+void home(){
   // las posiciones iniciales de los servos para home
       anguloCadera=90;
       anguloHombroD=81;
@@ -277,12 +278,14 @@ que en nuestro caso es que haga su extensión vertical máxima.
       anguloCodo=110;
       anguloMuneca=100;
       anguloCamara=81;
-  }```
+  }
+```
 
 En el loop declaramos algunas variables tipo char, para que aumente o disminuya el ángulo del motor que queramos,
 también hicimos las restricciones de los motores y dimos un pequeño delay, todo esto desde el monitor serial de arduino.
 
-```while(Serial.available()){//solo leeremos si hay un byte en el buffer
+```
+while(Serial.available()){//solo leeremos si hay un byte en el buffer
     comando=Serial.read();//leemos el byte
     if(comando=='A')anguloCadera+=1;//incrementamos 1
     else if(comando=='a')anguloCadera-=1;//decrementamos 1
@@ -305,7 +308,8 @@ también hicimos las restricciones de los motores y dimos un pequeño delay, tod
     anguloCamara=constrain(anguloCamara,0,180);
     delayMicroseconds(10);
   }
-  }```
+  }
+```
 
 También en el loop declaramos algunas variables tipo char, que cumplen con la misma función anterior, pero estas se utilizan para controlar el robot desde un dispositivo externo conectado mediante bluetooth.
 

@@ -244,7 +244,8 @@ Este es el código que usamos en el Arduino
 
 En el Setup declaramos los pines para cada motor, declaramos el delay y la función de escritura.
 
-```void setup(){
+```
+void setup(){
   Serial.begin(115200);
   mySerial.begin(9600);
   delay(3000);
@@ -262,7 +263,8 @@ En el Setup declaramos los pines para cada motor, declaramos el delay y la funci
   Codo.write(anguloCodo);
   Muneca.write(anguloMuneca);
   Camara.write(anguloCamara);
-}```
+}
+```
 
 Creamos una clase, llamada home, que cuando se llama, hace que el robot vaya a su posición inicial,
 que en nuestro caso es que haga su extensión vertical máxima.

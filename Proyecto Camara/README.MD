@@ -264,6 +264,11 @@ Finalemente mediante la aplicacion Bluetooth Electronics de keuwlsoft, disponibl
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/WhatsApp%20Image%202021-11-15%20at%2011.52.53.jpeg)
 
+
+```
+k=rtb.fkine(T)
+```
+
 Asi podemos controlar nuestro robot de cualquiera de las dos maneras, sea mediante el monitor serial o el bluetooth. Podemos ver su funcionamiento aqui:
 ## --> https://youtu.be/pAqLarWzQy8
 

@@ -260,7 +260,7 @@ También en el loop declaramos algunas variables tipo char, que cumplen con la m
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura.PNG)
 
-Finalemente mediante la aplicacion Bluetooth Electronics de keuwlsoft, disponible en el App Store de Android, desarrllamos una sencilla aplicacion que nos permite controlar el robot desde el telefono mediante diversos botones.
+Finalemente mediante la aplicacion Bluetooth Electronics de keuwlsoft, disponible en el App Store de Android, desarrollamos una sencilla aplicacion que nos permite controlar el robot desde el telefono mediante diversos botones.
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/WhatsApp%20Image%202021-11-15%20at%2011.52.53.jpeg)
 
@@ -282,13 +282,19 @@ Mediante el comando Swift de python obtenemos una visualización del robot de ma
 
 Podemos ver como el robot físico sigue la misma trayectoria que el robot virtual, ya que enviamos las trayectorias de python hasta el arduino mediante el codigo que cargamos anteriomente de comunicacion serial.
 
-![2222]()
+## --> https://youtu.be/jNTdWokAjWE
+
+#### 9. Video Promocional 📷-
+
+Con el fin de convertir este proyecto en algo más allá de la investigación, hemos desarrollado un concepto de marca alrededor de él y todo lo contenido en este documento, por eso desarrollamos un video pitch que contiene toda la información relevante del proyecto y que lo hace atractivo al público.
+
+![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo.png)
+## --> https://youtu.be/KYo8mj_5Os8
 
 ## Autores 🤵👩‍🎓🤵
 
-
 _Las siguientes personas colaboraron con el desarrollo del proyecto_
 
-* **Juan Sebastian Reina** - [JuanSebastianReina](https://github.com/JuanSebastianReina)
-* **Valentina Vega Mahecha** - [vale2012](https://github.com/vale2012)
-* **Cristian Paez** - []()
+* **Juan Sebastian Reina** - [JuanSebastianReina](https://github.com/JuanSebastianReina)// juanS.reinaa@utadeo.edu.co
+* **Valentina Vega Mahecha** - [vale2012](https://github.com/vale2012)// valentina.vegam@utadeo.edu.co
+* **Cristian Paez** - []()// cristian.paez@utadeo.edu.co

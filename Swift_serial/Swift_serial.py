@@ -187,6 +187,7 @@ En pruebas
                     #self.serial.write(b'S')
                     comandos+=chr(command+i+32)
         self.serial.write(comandos.encode())
+        print(comandos)
         # if True:
         #     command=65+i #A is the motor zero+ and a is motor zero-
         #     if move>0:

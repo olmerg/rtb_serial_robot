@@ -32,19 +32,19 @@ if __name__ == '__main__':   # pragma nocover
     p0=np.array([0, 0, 0, 0, 0])  
     p1=np.array([0, 0, 0, -pi/2, pi/2])
     p2=np.array([0, 0, -pi/2, 0, -pi/2])
-    p3=np.array([-pi/2, -pi/2, pi/2, -pi/2, 0])
-    p4=np.array([pi/2, 0, -pi/2, 0, 0])
-    p5=np.array([-pi/4, -pi/2, 0, pi/2, pi/4])
-    p6=np.array([pi/4, 0, -pi/2, -pi/2, -pi/4])
-    p7=np.array([0, 0, 0, -pi/2, 0])               
+    p3=np.array([-pi/2, 0, -pi/2, 0, 0])
+    p4=np.array([0, -pi/2, pi/2, 0, 0])
+    p5=np.array([pi/2, -pi/2, pi/2, -pi/2, 0])
+    p6=np.array([0, 0, 0, -pi/2, 0])
+    p7=np.array([0, 0, 0, 0, -pi/2])               
 
-    q0 = rtb.tools.trajectory.jtraj(p0,p1,150)
-    q1 = rtb.tools.trajectory.jtraj(p1,p2,80)
-    q2 = rtb.tools.trajectory.jtraj(p2,p3,80)
-    q3 = rtb.tools.trajectory.jtraj(p3,p4,80)
-    q4 = rtb.tools.trajectory.jtraj(p4,p5,80)
-    q5 = rtb.tools.trajectory.jtraj(p5,p6,80)    
-    q6 = rtb.tools.trajectory.jtraj(p6,p7,80)
+    q0 = rtb.tools.trajectory.jtraj(p0,p1,50)
+    q1 = rtb.tools.trajectory.jtraj(p1,p2,50)
+    q2 = rtb.tools.trajectory.jtraj(p2,p3,50)
+    q3 = rtb.tools.trajectory.jtraj(p3,p4,100)
+    q4 = rtb.tools.trajectory.jtraj(p4,p5,100)
+    q5 = rtb.tools.trajectory.jtraj(p5,p6,100)    
+    q6 = rtb.tools.trajectory.jtraj(p6,p7,100)
 
     #robot.plot(np.concatenate((q0.q,q1.q,q2.q,q3.q,q4.q,q5.q,q6.q)), block=False)
 
@@ -53,30 +53,30 @@ if __name__ == '__main__':   # pragma nocover
          #print(q)
          robot.q=q
          env.step(0.01)
-    #for q in q1.y:
+    for q in q1.q:
          #print(q)
-         #robot.q=q
-         #env.step(0.01)          
-    #for q in q2.y:
+         robot.q=q
+         env.step(0.01)          
+    for q in q2.q:
          #print(q)
-         #robot.q=q
-         #env.step(0.01) 
-    #for q in q3.y:
+         robot.q=q
+         env.step(0.01) 
+    for q in q3.q:
          #print(q)
-         #robot.q=q
-         #env.step(0.01) 
-    #for q in q4.y:
+         robot.q=q
+         env.step(0.01) 
+    for q in q4.q:
          #print(q)
-         #robot.q=q
-         #env.step(0.01) 
-    #for q in q5.y:
+         robot.q=q
+         env.step(0.01) 
+    for q in q5.q:
          #print(q)
-         #robot.q=q
-         #env.step(0.01)
-    #for q in q6.y:
+          robot.q=q
+          env.step(0.01)
+    for q in q6.q:
          #print(q)
-         #robot.q=q
-         #env.step(0.01)
+         robot.q=q
+         env.step(0.01)
     # return to home
     env.reset()
     #env.close()

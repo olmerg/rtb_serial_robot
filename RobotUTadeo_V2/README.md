@@ -19,8 +19,8 @@ Para este proyecto, se planteo reutilizar el [Robot Utadeo](https://github.com/o
 Adicional a esto, deseamos anclarlo a una tabla de madera que le genere un contra peso, pues al momento de generar algunas trayectorias o levantar algunos elementos, el robot tendia a ladearse o irse de frente. Incluso en el momento que se comenzaron a hacer las pruebas, esto sucedio y genero que el robot se cayera y se quebraran algunas piezas, lo que nos llevo a tener que generar nuevos cortes en laser y reemplazar dichas piezas.
 
 *Imagen de referencia de la nueva version del robot* 
+![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/f7fb55173bb7c4d279c81e9bced54d27c8a48d06/RobotUTadeo_V2/Imagenes/IMG_20211117_225023.jpg) 
 
-***NO OLVIDAR AGREGAR LA IMAGEN***
 ## Hadware y Software empleados :video_game: :desktop_computer:
 ***Hadware***
 > - Arduino uno (x1)

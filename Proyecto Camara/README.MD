@@ -329,6 +329,8 @@ Mediante el codigo en python planeamos diversas trayectorias que graban diferent
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/trayectoriasPython.PNG)
 
+## --> https://github.com/olmerg/rtb_serial_robot/blob/672e1da589aa97b80273f8c8c86c9cf40276324f/Proyecto%20Camara/Swift_serial_5DOFRobot.py
+
 Mediante el comando Swift de python obtenemos una visualización del robot de manera virtual, basandonos en el URDF del mismo, aqui vemos las trayectorias que sigue el robot físico.
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Swift.png)

@@ -29,15 +29,18 @@ análisis de los laboratorios.
 
 ### Contenido 📑
 
-1. Elaboración del modelo 3D
-1. Simulación URDF en ROS
-1. Corte láser del robot
-1. Control de peso de los Links físicos
-1. Cinematica directa en python
-1. Cinematica inversa
-1. Trayectorias
-1. Aplicación serial arduino
-
+1. Hardware y Software utilizado
+2. Elaboración del modelo 3D
+3. Simulación URDF en ROS
+4. Corte láser del robot
+5. Control de peso de los Links físicos
+6. Cinematica directa en python
+7. Cinematica inversa en python
+8. Aplicación serial arduino
+9. Trayectorias
+10. Video promocional
+11. Opciones de mejora
+12. Conclusiones
 
 #### 1. Hardware y Software utilizado -
 

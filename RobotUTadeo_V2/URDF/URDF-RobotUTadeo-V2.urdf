@@ -24,7 +24,7 @@
         <visual>
             <origin xyz="0.0 0.0 0.0" rpy="1.57 0.0 0.0"/>
             <geometry>
-                <mesh filename="package://lesson_urdf/meshes/visual/Ensamble1.stl" scale="0.1 0.1 0.1"/>
+                <mesh filename="RobotUTadeo_V2/URDF/Ensambles en STL/Ensamble-1.stl" scale="0.1 0.1 0.1"/>
             </geometry>
             <material name="blue"/>
         </visual>
@@ -39,7 +39,7 @@
             <visual>
                 <origin xyz="0.0 0.0 0.0" rpy="1.57 0.0 0.0"/>
                 <geometry>
-                    <mesh filename="package://lesson_urdf/meshes/visual/Ensamblaje2.stl" scale="0.1 0.1 0.1"/>
+                    <mesh filename="RobotUTadeo_V2/URDF/Ensambles en STL/Ensamble-2.stl" scale="0.1 0.1 0.1"/>
                 </geometry>
                 <material name="red">
                     <color rgba="0.5 0.5 0.5 1.0"/>
@@ -59,7 +59,7 @@
             <visual>
                 <origin xyz="0.0 0.0 0.0" rpy="1.57 0.0 0.0"/>
                 <geometry>
-                    <mesh filename="package://lesson_urdf/meshes/visual/Ensamblaje3.stl" scale="0.1 0.1 0.1"/>
+                    <mesh filename="RobotUTadeo_V2/URDF/Ensambles en STL/Ensamble-3.stl" scale="0.1 0.1 0.1"/>
                 </geometry>
                 <material name="blue"/>
             </visual>
@@ -77,7 +77,7 @@
             <visual>
                 <origin xyz="0.0 0.0 0.0" rpy="1.57 0.0 0.0"/>
                 <geometry>
-                    <mesh filename="package://lesson_urdf/meshes/visual/Ensamblaje4.stl" scale="0.1 0.1 0.1"/>
+                    <mesh filename="RobotUTadeo_V2/URDF/Ensambles en STL/Ensamble-4.stl" scale="0.1 0.1 0.1"/>
                 </geometry>
                 <material name="red"/>
             </visual>
@@ -95,7 +95,7 @@
             <visual>
                 <origin xyz="0.0 0.0 0.0" rpy="1.57 0.0 0.0"/>
                 <geometry>
-                    <mesh filename="package://lesson_urdf/meshes/visual/Ensamblaje5.stl" scale="0.1 0.1 0.1"/>
+                    <mesh filename="RobotUTadeo_V2/URDF/Ensambles en STL/Ensamble-5.stl" scale="0.1 0.1 0.1"/>
                 </geometry>
                 <material name="blue"/>
             </visual>
@@ -109,17 +109,17 @@
             <limit lower="-1.57" upper="1.57" effort="5.0" velocity="5.0"/>
         </joint>
 
-        <link name="Gripper">
+        <link name="link_5">
             <visual>
                 <origin xyz="0.0 0.0 0.0" rpy="1.57 0.0 0.0"/>
                 <geometry>
-                    <mesh filename="package://lesson_urdf/meshes/visual/Gripper.stl" scale="0.1 0.1 0.1"/>
+                    <mesh filename="RobotUTadeo_V2/URDF/Ensambles en STL/Ensamble-6.stl" scale="0.1 0.1 0.1"/>
                 </geometry>
                 <material name="red"/>
             </visual>
         </link>
 
-        <joint name="joint_Gripper" type="revolute">
+        <joint name="joint_5" type="revolute">
             <origin xyz="0.0 0.0 0.7" rpy="0.0 0.0 1.57"/>
             <parent link="link_4"/>
             <child link="Gripper"/>

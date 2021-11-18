@@ -23,7 +23,6 @@ Adicional a esto, deseamos anclarlo a una tabla de madera que le genere un contr
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/b04b90a4ea845541ae16c695681eb9d0f284da3a/RobotUTadeo_V2/Imagenes/IMG_20211117_225037.jpg)
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/b04b90a4ea845541ae16c695681eb9d0f284da3a/RobotUTadeo_V2/Imagenes/IMG_20211117_225047.jpg)
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/b04b90a4ea845541ae16c695681eb9d0f284da3a/RobotUTadeo_V2/Imagenes/IMG_20211117_225104.jpg)
-
 ## Hadware y Software empleados :video_game: :desktop_computer:
 ***Hadware***
 > - Arduino uno (x1)

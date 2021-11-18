@@ -110,9 +110,14 @@ En Robótica, la Cinemática inversa (IK) es la técnica que permite determinar 
 
 #### 6. Visualización final  🏁 -
 ![Alt Text](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/serial/Robot%20(2).gif)
+
 #### 7. Aplicación serial arduino-
 
+para la aplicacion serial con arduino se aplicaron los siguientes para metros para marcar cada una de la trayectorias deseadas
 
+![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/serial/Captura%20de%20pantalla%202021-11-18%20094131.png)
+
+![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/serial/Captura%20de%20pantalla%202021-11-18%20094208.png)
 
 ## Autores ✒️
 

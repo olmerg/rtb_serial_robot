@@ -68,7 +68,7 @@ Para estas trayectorias vamos a implementar los pasos usados en el parcial de se
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod8.png)
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod9.png)
 
-## Conclusiones 
+## Conclusiones :white_check_mark:
 Pudimos evidenciar que la implementación del electroiman, es una buena solución para el problema planteado, más sin embargo se podría mejorar la optimización de este proceso al implementar un transistor que le suba la corriente al electroiman, de esta forma obtendría más corriente para generar un campo magnetico mayor y atraer los elementos con más definición.
 
 Al ponerle una base, evita que el brazo se incline o se vaya hacia adelante al momento de estar haciendo las trayectorias o algun movimiento, pues como se menciono en el cuerpo de este trabajo, era un problema que poseia este robot por el peso que tiene del codo hacia el electroiman. 

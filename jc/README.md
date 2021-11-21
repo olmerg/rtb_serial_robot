@@ -168,7 +168,9 @@ En Robótica, la Cinemática inversa (IK) es la técnica que permite determinar 
 
 para la aplicacion serial con arduino se aplicaron los siguientes para metros para marcar cada una de la trayectorias deseadas
 
-#### 10. Conclusiónes
+#### 10. Resultados
+
+#### 11. De Conclusiónes
 
 
 ## Autores ✒️

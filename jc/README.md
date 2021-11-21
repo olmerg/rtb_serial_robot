@@ -170,7 +170,7 @@ para la aplicacion serial con arduino se aplicaron los siguientes para metros pa
 
 #### 10. Resultados
 
-#### 11. De Conclusiónes
+#### 11. Conclusiónes
 
 
 ## Autores ✒️

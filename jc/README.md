@@ -70,13 +70,7 @@ Consiste en determinar cual es la posición y orientación del extremo final del
 
 1.  inicialmente se importan las librerias que requiere python para ejecutar el codigo satisfactoriamente.
 
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001356.png)
-
-
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001556.png)
-
-
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001647.png)
+/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001647.png)
 
 
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001741.png)
@@ -115,9 +109,6 @@ En Robótica, la Cinemática inversa (IK) es la técnica que permite determinar 
 
 para la aplicacion serial con arduino se aplicaron los siguientes para metros para marcar cada una de la trayectorias deseadas
 
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/serial/Captura%20de%20pantalla%202021-11-18%20094131.png)
-
-![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/serial/Captura%20de%20pantalla%202021-11-18%20094208.png)
 
 ## Autores ✒️
 

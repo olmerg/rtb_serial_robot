@@ -76,7 +76,7 @@ Realizar la programación necesaria para que el robot colaborativo del laborator
 
 - Cables Dupond Jumper 40 unidades 20 cm Macho Hembra Arduino 
 
-- Proto-oard
+- Protoboard
 
 - Shield pca9685
 
@@ -94,6 +94,7 @@ Realizar la programación necesaria para que el robot colaborativo del laborator
 #### 3. Software de simulación y programación
 
 - Inventor
+
 - ROS 2
 
 - Arduino
@@ -101,7 +102,7 @@ Realizar la programación necesaria para que el robot colaborativo del laborator
 - python
 
 
-#### 4. Descripción de la elaboración del modelo-
+#### 4. Descripción de la elaboración del modelo
 
 Inicialmente se elaboro el modelo de cada una de las piezas del robot en inventor manteniendo las dimenciones de robot fisico, con el fin de poder hacer los ensambles necesarios para simular posteriormente los URDF en ROS.  
 
@@ -114,7 +115,7 @@ Inicialmente se elaboro el modelo de cada una de las piezas del robot en invento
 
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/WhatsApp%20Image%202021-10-05%20at%2012.14.51%20AM.jpeg)
 
-#### 5. simulación URDF ROS 🐢 -
+#### 5. simulación URDF ROS 🐢 
 
 A continuación se usan los ensambles simulados en formato stl para hacer el URDF del robot y la simulación de movimientos e identificar las limitaciones de movimiento
 
@@ -130,13 +131,9 @@ A continuación se usan los ensambles simulados en formato stl para hacer el URD
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/WhatsApp%20Image%202021-11-04%20at%205.21.16%20PM.jpeg)
 
 
-#### 6. 
- Cinematica directa en python 🐍-
+#### 6. Cinematica directa en python 🐍
 
 Consiste en determinar cual es la posición y orientación del extremo final del robot, con respecto a un sistema de coordenadas que se toma como referencia, conocidos los valores de las articulaciones y los parámetros geométricos de los elementos del robot
-
-1.  inicialmente se importan las librerias que requiere python para ejecutar el codigo satisfactoriamente.
-
 
 
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001741.png)
@@ -148,30 +145,33 @@ Consiste en determinar cual es la posición y orientación del extremo final del
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001948.png)
 
 
-#### 6. Cinematica inversa en python 🐍--
+#### 7. Cinematica inversa en python 🐍
 
 En Robótica, la Cinemática inversa (IK) es la técnica que permite determinar el movimiento de una cadena de articulaciones para lograr que un actuador final se ubique en una posición concreta. El cálculo de la cinemática inversa es un problema complejo que consiste en la resolución de una serie de ecuaciones cuya solución normalmente no es única.
 
 
-
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232454.png)
+
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232528.png)
+
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232556.png)
 
 
-#### 7. Trayectorias 📈-
+#### 8. Trayectorias 📈
 
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/trayectorias/Captura%20de%20pantalla%202021-11-06%20233332.png)
+
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/trayectorias/Captura%20de%20pantalla%202021-11-06%20233404.png)
 
-#### 8. Visualización final  🏁 -
+#### 9. Visualización final  🏁 
+
 ![Alt Text](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/serial/Robot%20(2).gif)
 
-#### 9. Aplicación serial arduino-
+#### 10. Aplicación serial arduino-
 
 para la aplicacion serial con arduino se aplicaron los siguientes para metros para marcar cada una de la trayectorias deseadas
 
-#### 10. Resultados
+#### 11. Resultados
 
 Después de haber realizado múltiples pruebas tanto software como de hardware  con el fin de programar, simular e implementar físicamente , las trayectorias y movivientos deseados 
 
@@ -179,7 +179,7 @@ En los resultados finales podemos observar que el robot físico realiza una ser�
 
 Comprobando que efectivamente representa con exactitud las órdenes y la secuencias que debía seguir para todo el proceso 
 
-#### 11. Conclusiónes
+#### 12. Conclusiónes
 
 - Gracias a las herramientas adquiridas durante el semestre fue posible comprender de manera óptima la metodología de cinemática inversa y cinemática directa 
 

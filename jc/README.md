@@ -170,7 +170,19 @@ para la aplicacion serial con arduino se aplicaron los siguientes para metros pa
 
 #### 10. Resultados
 
+Después de haber realizado múltiples pruebas tanto software como de hardware  con el fin de programar, simular e implementar físicamente , las trayectorias y movivientos deseados 
+
+En los resultados finales podemos observar que el robot físico realiza una seré de  movimientos de forma sincrónica  iguales a los propuestos  con la simulación que nos entrega python
+
+Comprobando que efectivamente representa con exactitud las órdenes y la secuencias que debía seguir para todo el proceso 
+
 #### 11. Conclusiónes
+
+- Gracias a las herramientas adquiridas durante el semestre fue posible comprender de manera óptima la metodología de cinemática inversa y cinemática directa 
+
+- las herramientas de python y Arduino son un método práctico para programar los distintos movimientos que requiere el brazo robótico, ya que además de ser un software libre de código abierto fue sencillo comprender como se utilizan sus funciones
+
+
 
 
 ## Autores ✒️

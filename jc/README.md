@@ -14,6 +14,10 @@ el robot seleccionado para el proyecto final fue un robot de 6 grados de liberta
 
 ### 📃 Contenido
 
+
+
+1. Objetivos
+
 1. Hardware del robot 
 
 1. Software de simulación y programación
@@ -36,6 +40,19 @@ el robot seleccionado para el proyecto final fue un robot de 6 grados de liberta
 
 
 1. Aplicación serial arduino
+
+#### 1. Objetivos
+
+##### objetivo general
+
+Realizar la programación necesaria para que el robot colaborativo del laboratorio realice la tarea asignada. 
+
+##### objetivos específicos
+
+
+- A través del urdf y ros realizar la simulación de trayectoria y velocidad de la tarea asignada
+- El robot debe ser capaz de recoger un tubo en posición vertical y dejarlo en otro sitio en posición horizontal.
+- Hacer que el robot físico por medio de arduino y python ejecute la labor programada
 
 
 #### 1. Hardware del robot 
@@ -69,10 +86,11 @@ el robot seleccionado para el proyecto final fue un robot de 6 grados de liberta
 
 #### 2. Software de simulación y programación
 
-- INVENTOR 
+- Inventor
 - ROS 2
-- PYTHON 
-- ARDUINO
+- python
+- Arduino
+
 
 #### 3. Descripción de la elaboración del modelo-
 

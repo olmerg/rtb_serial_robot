@@ -56,16 +56,27 @@ Luego de haber modelado y ensamblado todas las piezas, podremos ver nuestro braz
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/d3cee1eb60260a47448045f965aace5d251b18c5/RobotUTadeo_V2/Imagenes/IMG-20211114-WA0038.jpg)
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/d3cee1eb60260a47448045f965aace5d251b18c5/RobotUTadeo_V2/Imagenes/IMG-20211114-WA0039.jpg)
 ## Planteamiento de las trayectorias :chart_with_upwards_trend:
-Para estas trayectorias vamos a implementar los pasos usados en el parcial de segundo corte, de tal forma que trabajariamos con el siguiente codigo: 
+Para realizar una tarea determinada el robot debe moverse desde un punto inicial a uno final. Este movimiento puede ser realizado según infinitas trayectorias espaciales. De todas ellas hay algunas que, bien por su sencillez de implementación por parte del control cinemático o bien por su utilidad y aplicación a diversas tareas, son las que en la práctica incorporan los robots comerciales. De este modo, puede encontrarse que los robots dispongan de trayectorias punto a punto, coordinadas y continuas.
+Trayectorias Continuas
+Normalmente las trayectorias que el usuario pretende que el robot describa son trayectorias en línea recta o en arco de círculo. El resultado será que cada articulación sigue un movimiento aparentemente caótico con posibles cambios de dirección y velocidad y sin coordinación con el resto de las articulaciones. Sin embargo, el resultado conjunto será que el extremo del robot describirá la trayectoria deseada.
+Para estas trayectorias vamos a implementar los pasos usados en el parcial de segundo corte, de tal forma que trabajaríamos con el siguiente código: 
 
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod1.png)
+
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod2.png)
+
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod3.png)
+
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod4.png)
+
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod5.png)
+
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod6.png)
+
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod7.png)
+
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod8.png)
+
 ![This is an image](https://github.com/olmerg/rtb_serial_robot/blob/4888e2ee4398ec5dc13c4ea8633e09993e3fe042/RobotUTadeo_V2/Imagenes/Cod9.png)
 
 ## Conclusiones :white_check_mark:

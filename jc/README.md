@@ -1,4 +1,4 @@
-# PROYECTO FINAL  🚀
+# PROYECTO FINAL  JC25🚀
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/robot1.jpeg)
 
 # Identificación del reto 🤖

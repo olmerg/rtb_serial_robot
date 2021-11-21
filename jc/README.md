@@ -40,31 +40,31 @@ el robot seleccionado para el proyecto final fue un robot de 6 grados de liberta
 
 #### 1. Hardware del robot 
 
--Servomotor Tower Pro red.MG995
+- Servomotor Tower Pro red.MG995
 
--Servomotor Futaba ref.S3003
+- Servomotor Futaba ref.S3003
 
--Microservo 9g ref.SG90
+- Microservo 9g ref.SG90
 
--Arduino UNO R3
+- Arduino UNO R3
 
--Cables Dupond Jumper 40 unidades 20 cm Macho Macho Arduino 
+- Cables Dupond Jumper 40 unidades 20 cm Macho Macho Arduino 
 
--Cables Dupond Jumper 40 unidades 20 cm Macho Hembra Arduino 
+- Cables Dupond Jumper 40 unidades 20 cm Macho Hembra Arduino 
 
--Proto-oard
+- Proto-oard
 
--Shield pca9685
+- Shield pca9685
 
--Shield v5.0 sensor expansion board
+- Shield v5.0 sensor expansion board
 
--Modulo Hc-0.6 Bluetooth
+- Modulo Hc-0.6 Bluetooth
 
--Cargador 5v-2.5A
+- Cargador 5v-2.5A
 
--Modulo Driver L298
+- Modulo Driver L298
 
--MPU 6050
+- MPU 6050
 
 
 #### 2. Software de simulación y programación

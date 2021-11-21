@@ -29,33 +29,41 @@ análisis de los laboratorios.
 
 ### Contenido 📑
 
-1. Elaboración del modelo 3D
+1. Hardware y Software utilizado
+2. Elaboración del modelo 3D
+3. Simulación URDF en ROS
+4. Corte láser del robot
+5. Control de peso de los Links físicos
+6. Cinematica directa en python
+7. Cinematica inversa en python
+8. Aplicación serial arduino
+9. Trayectorias
+10. Video promocional
+11. Opciones de mejora
+12. Conclusiones
 
-1. Simulación URDF en ROS
+#### 1. Hardware y Software utilizado -
 
-1. Corte láser del robot
+## --> HARDWARE
+    Arduino Uno (x1)
+    Sensor Shield 5v (x1)
+    Modulo bluetooth para arduino (x1)
+    Convertidor 120v a 5v (x1)
+    Servomotor MG995 (x4)
+    Servomotor SG90 (x2)
+    Cámara Web (x1)
+## --> SOFTWARE
+    Visual Studio Code
+    Arduino IDE
+    Autodesk Inventor
+    Bluetooth Electronics
+    ROS
 
-1. Control de peso de los Links físicos
-
-1. Cinematica directa en python
-
-
-1. Cinematica inversa
-
-
-1. Trayectorias
-
-
-1. Aplicación serial arduino
-
-
-
-#### 1. Elaboración del modelo 3D
+#### 2. Elaboración del modelo 3D
 
 Inicialmente elaboramos el modelo de cada una de las piezas,(lista al final de este párrafo),del robot en Autodesk 
 Inventor, manteniendo las dimensiones del robot fisico que pedimos prestado en la universidad, con el fin de poder 
 hacer los ensambles necesarios para simular posteriormente los URDF en ROS.  
-
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Listado%20Piezas%20del%20Cuerpo.PNG)
 
@@ -73,13 +81,12 @@ Soporte Base de Servomotores(Hombro)
 
 ServoMotor (MG995)
 
-Ya con todas con todas las piezas diseñadas, realizamos el ensamblaje del robot  y se modeló. Se realizaron uniones rotacionales
- para el conjunto de piezas que lo necesitaran.
+Ya con todas con todas las piezas diseñadas, realizamos el ensamblaje del robot  y se modeló. Se realizaron uniones rotacionales para el conjunto de piezas que lo necesitaran.
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaEnsambeCompleto.PNG)
 
 Ensamble completo del robot
 
-#### 2. Simulación URDF en ROS 
+#### 3. Simulación URDF en ROS 
 
 Con el ensamblaje realizado procedimos a obtener los 6 archivos STL que necesitamos, para posteriormente recrear el robot en ROS
 
@@ -119,11 +126,7 @@ tener en cuenta a la hora de programar en arduino.
 Pero para visualizar el robot en RVIZ tuvimos que hacer el siguiente código en el que especifica para cada link,
 su nombre, su origen, su ruta de acceso, el color, su padre, su hijo y el tipo de unión que queriamos.
 
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20c%C3%B3digo%20URDF%201.PNG)
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20c%C3%B3digo%20URDF%202.PNG)
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20c%C3%B3digo%20URDF%203.PNG)
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20c%C3%B3digo%20URDF%204.PNG)
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura%20c%C3%B3digo%20URDF%205.PNG)
+## --> https://github.com/olmerg/rtb_serial_robot/blob/a94f923dfe8814012ff47716d1299d0069b88605/Proyecto%20Camara/xacro/urdf/planar_3dof.urdf
 
 Ya luego de este código y de algunos códigos en la consola, pudimos llegar a esta visualización.
 
@@ -145,7 +148,7 @@ Algunos ejemplos de otras posiciones que logramos son las siguientes:
 Toda esta parte de la programación y visualización en ROS está más detallado en este video
 ## --> https://www.youtube.com/watch?v=fcq3hT-I8CQ
 
-#### 3.Corte láser del robot
+#### 4.Corte láser del robot
 
 Para el corte láser creamos estos 3 archivos PDF tamaño A4, los obtuvimos a partir de los archivos DWG
 que creamos en Autodesk Inventor. 
@@ -156,7 +159,7 @@ que creamos en Autodesk Inventor.
 
 ![Click Aquí para ver PDF 3](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Plano%20de%20CORTE%203.pdf)
 
-#### 4. Control de peso de los Links físicos
+#### 5. Control de peso de los Links físicos
 
 Con los motores y cables brindados por la Universidad, junto a las las piezas que cortamos y con los tornillos,tuercas y la 
 cámara que compramos, empezamos con la construcción o ensamblaje del robot físico
@@ -198,15 +201,13 @@ Robot posicionado en su alcance horizontal máximo
 
 Robot posicionado en su alcance vertical máximo
 
-
-#### 5. Cinematica directa en python 🐍-
+#### 6. Cinematica directa en python 🐍-
 
 Consiste en determinar cual es la posición y orientación del extremo final del robot, con respecto a un sistema de 
 coordenadas que se toma como referencia, conocidos los valores de las articulaciones y los parámetros geométricos de los elementos del robot
 
 Este es el código que usamos
-
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaCodigoCinematicaDirecta.PNG)
+## --> https://github.com/olmerg/rtb_serial_robot/blob/a94f923dfe8814012ff47716d1299d0069b88605/Proyecto%20Camara/CinematicaDirecta
 
 Esto es lo que se imprime en la consola
 
@@ -217,7 +218,7 @@ cambiar el ángulo de cada una de las uniones.
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaPlotCinematicaDirecta.PNG)
 
-#### 6. Cinematica inversa en python 🐍--
+#### 7. Cinematica inversa en python 🐍--
 
 En Robótica, la Cinemática inversa (IK) es la técnica que permite determinar el movimiento de una cadena de 
 articulaciones para lograr que un actuador final se ubique en una posición concreta. 
@@ -225,10 +226,7 @@ El cálculo de la cinemática inversa es un problema complejo que consiste en la
 serie de ecuaciones cuya solución normalmente no es única.
 
 Este es el código que usamos
-
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaCodigoCinematicaInversa1.PNG)
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaCodigoCinematicaInversa2.PNG)
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaCodigoCinematicaInversa3.PNG)
+## --> https://github.com/olmerg/rtb_serial_robot/blob/a94f923dfe8814012ff47716d1299d0069b88605/Proyecto%20Camara/CinemticaInversa
 
 Esto es lo que se imprime en la consola
 
@@ -238,27 +236,84 @@ Estos es el plot que generamos
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/CapturaPlotCinematicaInversa.PNG)
 
-#### 7. Aplicación serial arduino
+Cabe aclarar que este código está relacionado unicamente a los primeros tres grados de libertad del robot, para hacer la cinemática inversa completa podemos acudir a algún método mumérico como lo son ikine o ikineLM, o también podemos acudir al uso del desacoplo cinemático del mismo.
+
+#### 8. Aplicación serial arduino
 
 Este es el código que usamos en el Arduino
 
 En el Setup declaramos los pines para cada motor, declaramos el delay y la función de escritura.
- .
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/SetupArduino.PNG)
+
+```
+void setup(){
+  Serial.begin(115200);
+  mySerial.begin(9600);
+  delay(3000);
+  //pines en el arduino para cada señal del servomotor
+  Cadera.attach(2);
+  HombroD.attach(3);
+  //HombroI.attach(8);
+  Codo.attach(9);
+  Muneca.attach(11);
+  Camara.attach(12);
+  home();
+  Cadera.write(anguloCadera);  
+  HombroD.write(anguloHombroD);
+  //HombroI.write(anguloHombroI);
+  Codo.write(anguloCodo);
+  Muneca.write(anguloMuneca);
+  Camara.write(anguloCamara);
+}
+```
 
 Creamos una clase, llamada home, que cuando se llama, hace que el robot vaya a su posición inicial,
 que en nuestro caso es que haga su extensión vertical máxima.
 
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/PosicionInicialArduino.PNG)
+```
+void home(){
+  // las posiciones iniciales de los servos para home
+      anguloCadera=90;
+      anguloHombroD=81;
+      //anguloHombroI=84;
+      anguloCodo=110;
+      anguloMuneca=100;
+      anguloCamara=81;
+  }
+```
 
 En el loop declaramos algunas variables tipo char, para que aumente o disminuya el ángulo del motor que queramos,
 también hicimos las restricciones de los motores y dimos un pequeño delay, todo esto desde el monitor serial de arduino.
 
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/loopArduino.PNG)
+```
+while(Serial.available()){//solo leeremos si hay un byte en el buffer
+    comando=Serial.read();//leemos el byte
+    if(comando=='A')anguloCadera+=1;//incrementamos 1
+    else if(comando=='a')anguloCadera-=1;//decrementamos 1
+    else if(comando=='B')anguloHombroD+=1;
+    else if(comando=='b')anguloHombroD-=1;
+    //else if(comando=='C')anguloHombroI+=1;
+    //else if(comando=='c')anguloHombroI-=1;
+    else if(comando=='D')anguloCodo+=1;
+    else if(comando=='d')anguloCodo-=1;
+    else if(comando=='E')anguloMuneca+=1;
+    else if(comando=='e')anguloMuneca-=1;
+    else if(comando=='G')anguloCamara=0;
+    else if(comando=='g')anguloCamara=80;
+    else if(comando=='h')home();
+    anguloCadera=constrain(anguloCadera,0,180);//restringimos el valor de 0 a 180
+    anguloHombroD=constrain(anguloHombroD,0,180);//restringimos el valor de 0 a 180
+    //anguloHombroI=constrain(anguloHombroI,0,180);//restringimos el valor de 0 a 180
+    anguloCodo=constrain(anguloCodo,0,180);//restringimos el valor de 0 a 180
+    anguloMuneca=constrain(anguloMuneca,0,180);
+    anguloCamara=constrain(anguloCamara,0,180);
+    delayMicroseconds(10);
+  }
+  }
+```
 
 También en el loop declaramos algunas variables tipo char, que cumplen con la misma función anterior, pero estas se utilizan para controlar el robot desde un dispositivo externo conectado mediante bluetooth.
 
-![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Captura.PNG)
+## --> https://github.com/olmerg/rtb_serial_robot/blob/a94f923dfe8814012ff47716d1299d0069b88605/Proyecto%20Camara/brazo5DOF.ino
 
 Finalemente mediante la aplicacion Bluetooth Electronics de keuwlsoft, disponible en el App Store de Android, desarrollamos una sencilla aplicacion que nos permite controlar el robot desde el telefono mediante diversos botones.
 
@@ -268,11 +323,13 @@ Asi podemos controlar nuestro robot de cualquiera de las dos maneras, sea median
 ## --> https://youtu.be/pAqLarWzQy8
 
 
-#### 8. Trayectorias 📈-
+#### 9. Trayectorias 📈-
 
 Mediante el codigo en python planeamos diversas trayectorias que graban diferentes movimientos mediante la cámara ubicada en el gripper, puede ser una escena de acción como en las peliculas o tomas desde diversos angulos.
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/trayectoriasPython.PNG)
+
+## --> https://github.com/olmerg/rtb_serial_robot/blob/672e1da589aa97b80273f8c8c86c9cf40276324f/Proyecto%20Camara/Swift_serial_5DOFRobot.py
 
 Mediante el comando Swift de python obtenemos una visualización del robot de manera virtual, basandonos en el URDF del mismo, aqui vemos las trayectorias que sigue el robot físico.
 
@@ -284,12 +341,18 @@ Podemos ver como el robot físico sigue la misma trayectoria que el robot virtua
 
 ## --> https://youtu.be/jNTdWokAjWE
 
-#### 9. Video Promocional 📷-
+#### 10. Video Promocional 📷-
 
 Con el fin de convertir este proyecto en algo más allá de la investigación, hemos desarrollado un concepto de marca alrededor de él y todo lo contenido en este documento, por eso desarrollamos un video pitch que contiene toda la información relevante del proyecto y que lo hace atractivo al público.
 
 ![2222](https://github.com/JuanSebastianReina/ImagenesProyectoRob/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo.png)
 ## --> https://youtu.be/KYo8mj_5Os8
+
+#### 11. Opciones de mejora-
+
+
+#### 12. Conclusiones-
+
 
 ## Autores 🤵👩‍🎓🤵
 

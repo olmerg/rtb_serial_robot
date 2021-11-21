@@ -14,6 +14,10 @@ el robot seleccionado para el proyecto final fue un robot de 6 grados de liberta
 
 ### 📃 Contenido
 
+1. Hardware del robot 
+
+1. Software de simulación y programación
+
 1. Descripción de la elaboración del modelo
 
 1. simulación URDF
@@ -34,6 +38,28 @@ el robot seleccionado para el proyecto final fue un robot de 6 grados de liberta
 1. Aplicación serial arduino
 
 
+#### 1. Hardware del robot 
+
+-Servomotor Tower Pro red.MG995
+-Servomotor Futaba ref.S3003
+-Microservo 9g ref.SG90
+-Arduino UNO R3
+-Cables Dupond Jumper 40 unidades 20 cm Macho Macho Arduino 
+-Cables Dupond Jumper 40 unidades 20 cm Macho Hembra Arduino 
+-Proto-oard
+-Shield pca9685
+-Shield v5.0 sensor expansion board
+-Modulo Hc-0.6 Bluetooth
+-Cargador 5v-2.5A
+-Modulo Driver L298
+-MPU 6050
+
+#### 1. Software de simulación y programación
+
+- INVENTOR 
+- ROS 2
+- PYTHON 
+- ARDUINO
 
 #### 1. Descripción de la elaboración del modelo-
 

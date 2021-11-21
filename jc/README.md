@@ -41,6 +41,13 @@ el robot seleccionado para el proyecto final fue un robot de 6 grados de liberta
 
 1. Aplicación serial arduino
 
+1. Resultados
+
+
+1. Conclusiónes
+
+
+
 #### 1. Objetivos
 
 ##### objetivo general

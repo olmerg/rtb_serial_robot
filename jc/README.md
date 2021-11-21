@@ -62,7 +62,7 @@ Realizar la programación necesaria para que el robot colaborativo del laborator
 - Hacer que el robot físico por medio de arduino y python ejecute la labor programada
 
 
-#### 1. Hardware del robot 
+#### 2. Hardware del robot 
 
 - Servomotor Tower Pro red.MG995
 
@@ -91,15 +91,17 @@ Realizar la programación necesaria para que el robot colaborativo del laborator
 - MPU 6050
 
 
-#### 2. Software de simulación y programación
+#### 3. Software de simulación y programación
 
 - Inventor
 - ROS 2
-- python
+
 - Arduino
 
+- python
 
-#### 3. Descripción de la elaboración del modelo-
+
+#### 4. Descripción de la elaboración del modelo-
 
 Inicialmente se elaboro el modelo de cada una de las piezas del robot en inventor manteniendo las dimenciones de robot fisico, con el fin de poder hacer los ensambles necesarios para simular posteriormente los URDF en ROS.  
 
@@ -112,7 +114,7 @@ Inicialmente se elaboro el modelo de cada una de las piezas del robot en invento
 
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/WhatsApp%20Image%202021-10-05%20at%2012.14.51%20AM.jpeg)
 
-#### 4. simulación URDF ROS 🐢 -
+#### 5. simulación URDF ROS 🐢 -
 
 A continuación se usan los ensambles simulados en formato stl para hacer el URDF del robot y la simulación de movimientos e identificar las limitaciones de movimiento
 
@@ -128,7 +130,8 @@ A continuación se usan los ensambles simulados en formato stl para hacer el URD
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/WhatsApp%20Image%202021-11-04%20at%205.21.16%20PM.jpeg)
 
 
-#### 5. Cinematica directa en python 🐍-
+#### 6. 
+ Cinematica directa en python 🐍-
 
 Consiste en determinar cual es la posición y orientación del extremo final del robot, con respecto a un sistema de coordenadas que se toma como referencia, conocidos los valores de las articulaciones y los parámetros geométricos de los elementos del robot
 

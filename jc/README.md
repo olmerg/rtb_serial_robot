@@ -167,6 +167,7 @@ obtuvimos los siguientes resultados
 
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232556.png)
 
+![Alt Text](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Mi%20video1%20(1).gif)
 
 #### 8. Trayectorias 📈
 

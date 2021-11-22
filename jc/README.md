@@ -30,7 +30,7 @@ el robot seleccionado para el proyecto final fue un robot de 6 grados de liberta
 1. Cinematica directa en python
 
 
-1. Cinematica inversa
+1. Cinematica inversa en python 
 
 
 1. Trayectorias
@@ -175,7 +175,7 @@ con el siguiente codigo
 
 https://github.com/olmerg/rtb_serial_robot/blob/main/jc/codigos/Trayectorias.py
 
-nos dio como resultado
+Aplicamos las siguientes trayectorias:
 
 
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/trayectorias/Captura%20de%20pantalla%202021-11-06%20233332.png)

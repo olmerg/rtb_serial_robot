@@ -196,7 +196,7 @@ https://github.com/olmerg/rtb_serial_robot/blob/main/Arduino_firmware/Arduino_fi
 
 Después de haber realizado múltiples pruebas tanto software como de hardware  con el fin de programar, simular e implementar físicamente , las trayectorias y movivientos deseados 
 
-En los resultados finales podemos observar que el robot físico realiza una seré de  movimientos de forma sincrónica  iguales a los propuestos  con la simulación que nos entrega python
+En los resultados finales podemos observar que el robot físico realiza una serie de  movimientos de forma sincrónica  iguales a los propuestos  con la simulación que nos entrega python
 
 Comprobando que efectivamente representa con exactitud las órdenes y la secuencias que debía seguir para todo el proceso.
 

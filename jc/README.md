@@ -169,7 +169,7 @@ la Cinemática inversa (IK) es la técnica que permite determinar el movimiento 
 
 #### 10. Aplicación serial arduino-
 
-para la aplicacion serial con arduino se usaron los siguientes para metros para marcar cada una de la trayectorias deseadas
+para la aplicacion serial con arduino se usaron los siguientes parametros para marcar cada una de la trayectorias deseadas
 
 https://github.com/olmerg/rtb_serial_robot/blob/main/Arduino_firmware/Arduino_firmware.ino
 

@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<robot name="planar_3dof" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <material name="red">
+        <color rgba="0.8 0.0 0.0 1.0"/>
+    </material>
+
+    <material name="blue">
+        <color rgba="0 0 128 1"/>
+    </material>
+
+    <material name="green">
+        <color rgba="0 128 0 1"/>
+    </material>
+
+    <material name="black">
+        <color rgba="0 0 0 1"/>
+    </material>
+
+	<link name="world" />
+
+        <link name="base_link">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="1.57 1.57 0.0"/>
+            <geometry>
+                <mesh filename="package://lesson_urdf/meshes/visual/base.stl" scale="0.1 0.1 0.1"/>
+            </geometry>
+            <material name="Cyan">
+             <color rgba="0 1.0 1.0 1.0"/>
+            </material>
+        </visual>
+        </link>
+
+        <joint name="Join" type="fixed">
+            <parent link="world"/>
+            <child link="base_link"/>
+        </joint>
+
+        <link name="link_1">
+            <visual>
+                <origin xyz="0.09 0.0 0.15" rpy="0.0 0.0 0.0"/>
+                <geometry>
+                    <mesh filename="package://lesson_urdf/meshes/visual/baseMovil.stl" scale="0.1 0.1 0.1"/>
+                </geometry>
+                <material name="red">
+                    <color rgba="0.8 0.0 0.0 1.0"/>
+                </material>
+            </visual>
+        </link>
+
+        <joint name="joint_1" type="revolute">
+            <origin xyz="0.0 0.0 0.6" rpy="0.0 0.0 0.0"/>
+            <parent link="base_link"/>
+            <child link="link_1"/>
+            <axis xyz="0.0 0.0 1.0"/>
+            <limit lower="-1.57" upper="1.57" effort="5.0" velocity="5.0"/>
+        </joint>
+
+        <link name="link_2">
+            <visual>
+                <origin xyz="0.18 0.55 0.6" rpy="0.0 0.0 1.57"/>
+                <geometry>
+                    <mesh filename="package://lesson_urdf/meshes/visual/brazo1.stl" scale="0.1 0.1 0.1"/>
+                </geometry>
+                <material name="Cyan"/>
+            </visual>
+        </link>
+
+        <joint name="joint_2" type="revolute">
+            <origin xyz="0.0 0.0 0.3" rpy="0.0 0.0 1.57"/>
+            <parent link="link_1"/>
+            <child link="link_2"/>
+            <axis xyz="0.0 1.0 0.0"/>
+            <limit lower="-1.57" upper="1.57" effort="5.0" velocity="5.0"/>
+        </joint>
+
+        <link name="link_3">
+            <visual>
+                <origin xyz="-0.31 0.15 0.82" rpy="0.0 0.0 1.57"/>
+                <geometry>
+                    <mesh filename="package://lesson_urdf/meshes/visual/brazo2.stl" scale="0.1 0.1 0.1"/>
+                </geometry>
+                <material name="red"/>
+            </visual>
+        </link>
+
+        <joint name="joint_3" type="revolute">
+            <origin xyz="0.02 0.0 1.49" rpy="0.0 0.0 0.0"/>
+            <parent link="link_2"/>
+            <child link="link_3"/>
+            <axis xyz="0.0 1.0 0.0"/>
+            <limit lower="-1.57" upper="1.57" effort="5.0" velocity="5.0"/>
+        </joint>
+
+        <link name="link_4">
+            <visual>
+                <origin xyz="-0.19 -0.04 0.39" rpy="1.25 -3.5 0.0"/>
+                <geometry>
+                    <mesh filename="package://lesson_urdf/meshes/visual/brazo3.stl" scale="0.1 0.1 0.1"/>
+                </geometry>
+                <material name="Cyan"/>
+            </visual>
+        </link>
+
+        <joint name="joint_4" type="revolute">
+            <origin xyz="0.0 0.0 1.43" rpy="0.0 0.0 0.0"/>
+            <parent link="link_3"/>
+            <child link="link_4"/>
+            <axis xyz="0.0 1.0 0.0"/>
+            <limit lower="-1.57" upper="1.57" effort="5.0" velocity="5.0"/>
+        </joint>
+
+        <link name="Gripper">
+            <visual>
+                <origin xyz="0.05 -0.06 0.0" rpy="-1.85 0.34 -0.42"/>
+                <geometry>
+                    <mesh filename="package://lesson_urdf/meshes/visual/gripper1.stl" scale="0.1 0.1 0.1"/>
+                </geometry>
+                <material name="red"/>
+            </visual>
+        </link>
+
+        <joint name="joint_Gripper" type="revolute">
+            <origin xyz="-0.16 0.0 0.85" rpy="0.0 0.0 1.57"/>
+            <parent link="link_4"/>
+            <child link="Gripper"/>
+            <axis xyz="0.0 0.0 1.0"/>
+            <limit lower="-1.57" upper="1.57" effort="5.0" velocity="5.0"/>
+        </joint>
+    
+</robot>

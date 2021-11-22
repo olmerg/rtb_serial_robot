@@ -136,9 +136,11 @@ A continuación se usan los ensambles simulados en formato stl para hacer el URD
 Consiste en determinar cual es la posición y orientación del extremo final del robot, con respecto a un sistema de coordenadas que se toma como referencia, conocidos los valores de las articulaciones y los parámetros geométricos de los elementos del robot.
 
 ejecutando el siguiente codigo:
+
 https://github.com/olmerg/rtb_serial_robot/blob/main/jc/codigos/CinematicaDirecta.py
 
 obtuvimos los siguientes resultados
+
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20directa/Captura%20de%20pantalla%202021-11-06%20001741.png)
 
 
@@ -153,9 +155,11 @@ obtuvimos los siguientes resultados
 la Cinemática inversa (IK) es la técnica que permite determinar el movimiento de una cadena de articulaciones para lograr que un actuador final se ubique en una posición concreta. El cálculo de la cinemática inversa es un problema complejo que consiste en la resolución de una serie de ecuaciones cuya solución normalmente no es única.
 
 ejecutando el siguiente codigo:
+
 https://github.com/olmerg/rtb_serial_robot/blob/main/jc/codigos/CinematicaInversa.py
 
 obtuvimos los siguientes resultados 
+
 
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/cinematica%20inversa/Captura%20de%20pantalla%202021-11-06%20232454.png)
 
@@ -165,10 +169,14 @@ obtuvimos los siguientes resultados
 
 
 #### 8. Trayectorias 📈
+
 con el siguiente codigo 
+
 https://github.com/olmerg/rtb_serial_robot/blob/main/jc/codigos/Trayectorias.py
 
 nos dio como resultado
+
+
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/trayectorias/Captura%20de%20pantalla%202021-11-06%20233332.png)
 
 ![2222](https://github.com/cristianchernandezs/Parcial_2_robotica/blob/main/imagenes%20github/imagenes/trayectorias/Captura%20de%20pantalla%202021-11-06%20233404.png)
@@ -191,7 +199,7 @@ En los resultados finales podemos observar que el robot físico realiza una ser�
 
 Comprobando que efectivamente representa con exactitud las órdenes y la secuencias que debía seguir para todo el proceso.
 
-https://youtu.be/4HT8Srp_R5g
+##### video final: https://youtu.be/4HT8Srp_R5g
 
 #### 12. Conclusiónes
 

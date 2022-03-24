@@ -91,7 +91,7 @@ void loop(){
     else if(comando=='e')angulomano-=1;
     //TODO: adicionar el sexto grado de libertad
     else if(comando=='J')angulodedos=0;
-    else if(comando=='j')angulodedos=80;
+    else if(comando=='j')angulodedos=120;
     else if(comando=='I'); //TODO: adicionar el codigo para el iman
     else if(comando=='i'); //TODO: adicionar el codigo para el iman
     else if(comando=='h')home();

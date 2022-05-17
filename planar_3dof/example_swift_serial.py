@@ -16,7 +16,7 @@ from math import pi
 
 if __name__ == '__main__':   # pragma nocover
 
-    env = Swift_serial('COM6',115200)
+    env = Swift_serial('/dev/ttyUSB0',115200)
     
     
     #posicion inicial (aqui cambiar por el robot realizado)
